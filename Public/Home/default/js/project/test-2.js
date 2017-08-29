@@ -45,11 +45,15 @@ $(function(){
 		 var that = f;
 		 var e = that.pcModel();
 		 var str = '';
-		 for(var i=0,len=data.content.length;i<len;i++){
-			 
+		 len=data.content.length;
+		 console.log(len);
+		/*  for(var i=0,len=data.content.length;i<len;i++){
+			 str += e.replace(/{{url}}/g, data.content[i].url).replace(/{{pic}}/g, data.content[i].pic).replace(/{{desc}}/g, data.content[i].desc).replace(/{{title}}/g, data.content[i].title).replace(/{{catname}}/g, d.content[i].catname).replace(/{{publishtime}}/g, data.content[i].publishtime);
 		 }
+		 console.log(str); */
+		 //$("#newList .news).prepend(k);
 		 console.log(f);
-		 console.log(d);
+		 console.log(data);
 	}
 	
 	 new page().init();
