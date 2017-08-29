@@ -1,0 +1,53 @@
+/*内容大标题*/
+.publicTitle{
+	line-height: 2 !important;
+	text-align: center !important;
+	color:rgb(79,129,189) !important;
+	font-size: 26px !important;
+	font-weight: 600 !important;
+}
+/*二级标题*/
+.publicSecTitle{
+	line-height: 2 !important;
+	color:rgb(79,129,189) !important;
+	font-size: 16px !important;
+	font-weight: 600 !important;
+}
+
+/*内容*/
+.publicp{
+	line-height: 1.75 !important;
+	text-indent: 2em !important;
+	font-size: 15px !important;
+	letter-spacing: 3px !important;
+	color:#8a8a8b !important;
+}
+
+
+/*内容部分里的成功案例*/
+.publicSecTitle.cg{
+	color:rgb(192,80,77) !important;
+}
+
+/*内容部分里成功案例的内容*/
+.publicp.cg{
+	color:rgb(192,80,77) !important;
+}
+
+
+/**
+ * 备注：联系我们的，标题，使用publicSecTitle
+ * 公司简介：(标题---publicTitle，内容---publicp，二级标题---publicSecTitle)
+ * 企业文化：(内容---publicp，二级标题---publicSecTitle)
+ */
+@media (max-width: 435px){
+	.publicTitle{
+		font-size: 1.6em !important;
+		line-height: 1.6 !important;
+		margin-bottom: .4em;
+	}
+}
+
+
+
+

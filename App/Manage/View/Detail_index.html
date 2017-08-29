@@ -1,0 +1,269 @@
+<extend name="Public:base"/>
+<block name="header_js">
+   <script type="text/javascript" src="__DATA__/editor/ueditor/ueditor.config.js"></script>
+   <script type="text/javascript" src="__DATA__/editor/ueditor/ueditor.all.min.js"></script>
+   <script type="text/javascript" src="__PUBLIC__/js/detail.js"></script>
+
+   <script type="text/javascript">
+       $(function () {
+           //缩略图上传
+           //图片集上传
+           var app_picture_show = $('#app_picture_show');
+           var app_picture_tip = $(".app_picture_tip");
+           $("#app_picture_upload").wrap("<form id='app_picture_form' action='{:U('Public/upload',array('img_flag' => 1))}' method='post' enctype='multipart/form-data'></form>");
+           $("#app_picture_upload").change(function(){
+               if($("#app_picture_upload").val() == "") return;
+
+               $("#app_picture_form").ajaxSubmit({
+                   dataType:  'json',
+                   beforeSend: function() {
+                       app_picture_tip.html("上传中...");
+                   },
+                   success: function(data) {
+                       if(data.state == 'SUCCESS'){
+                           var fileSize = parseFloat(data.info[0].size/1024).toFixed(2);
+                           app_picture_tip.html(""+ data.info[0].name +" 上传成功("+ fileSize +"k)");
+                           var img = data.info[0].url;
+                           var picture_html= '<div class="picture_item"><img src="'+ img +'" width="120"><div class="picture_del">删除</div><div class="picture_go_up">前移</div><input type="hidden" name="subimgurls[]" value="'+ img +'" /></div>'
+                           app_picture_show.append(picture_html);
+                       }else {
+                           app_picture_tip.html(data.state);
+                       }
+
+                   },
+                   error:function(xhr){
+                       app_picture_tip.html("上传失败"+xhr);
+
+                   }
+               });
+           });
+
+
+           //jquery1.7后没有live
+           //$(document).on 也行
+           $('.picture_show').on('mouseenter',".picture_item",function(){
+               $(this).find('.picture_go_up').show();
+               $(this).find('.picture_del').show();
+           }).on('mouseleave',".picture_item",function(){
+                   $(this).find('.picture_go_up').hide();
+                   $(this).find('.picture_del').hide();
+               }
+           );
+
+           $('.picture_show').on('click','.picture_go_up',function () {
+               var parent = $(this).parent();
+               if (parent.index() == 0){
+               }else{
+                   parent.prev().before(parent);
+                   $(this).hide();
+                   parent.find('.picture_del').hide();
+               }
+
+           });
+
+           $('.picture_show').on('click','.picture_del',function () {
+               var img = $(this).next().val();//下个元素input的值
+               $(this).parent().remove();////移除父元素
+
+           });
+
+       });
+   </script>
+
+</block>
+
+<block name="content">
+   <div class="row">
+      <div class="col-lg-12">
+         <h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em>
+            {$vo.name}
+            <span class="xyh-pos">
+                <i class="glyphicon glyphicon-log-out"></i>
+                <if condition='ACTION_NAME eq "index"'>
+                    <foreach name='poscate' item='v'>
+                    <a href="{:U('' . ucfirst($v['tablename']) .'/index', array('pid' => $v['id']))}">{$v.name} </a> <em
+                            class="glyphicon glyphicon-menu-right"></em>
+                    </foreach>
+                </if>
+            </span>
+         </h3>
+
+         <if condition="$subcate">
+            <nav class="navbar navbar-default">
+               <div class="container-fluid">
+                  <div class="navbar-header">
+                     <span class="navbar-text">子栏目：</span>
+                     <foreach name='subcate' item='v'>
+                        <a href="{:U(''. ucfirst($v['tablename']) . '/index', array('pid' => $v['id']))}"
+                           class="btn btn-sm btn-default navbar-btn">{$v.name}
+                           <notempty name="v['child']">&there4;</notempty>
+                        </a>
+                     </foreach>
+                  </div>
+               </div>
+            </nav>
+         </if>
+      </div>
+
+   </div>
+
+   <div class="row">
+      <div class="col-lg-12">
+         <div class="box">
+            <div class="body">
+               <form class="form-horizontal" id="formValidate" role="form" method="post" action="{:U('index')}">
+
+                  <!--                        <div class="form-group">
+                                              <label class="col-sm-2 control-label">英文名称</label>
+                                              <div class="col-sm-5">
+                                                  <input type="text" class="form-control" name="ename" value="{$vo.ename}"
+                                                         placeholder="英文缩写"/>
+                                              </div>
+                                          </div>-->
+                  <!--
+                  <div class="col-sm-5">
+                      <button class="btn btn-primary" type="button" id="BrowerPicture"><em
+                              class="glyphicon glyphicon-plus-sign"></em> 选择站内图片
+                      </button>
+                      <div class="btn btn-success up-picture-btn">
+                          <span><em class="glyphicon glyphicon-plus-sign"></em>添加图片</span>
+                          <input id="fileupload" type="file" name="mypic">
+                      </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="" class="col-sm-2 control-label"></label>
+                  <div class="col-sm-9">
+                      <div class="litpic_tip"></div>
+                      <div id="litpic_show">
+                          <if condition="$vo['litpic']"><img src="{$vo.litpic}" width='120'/></if>
+                      </div>
+                  </div>
+              </div>
+              -->
+                  <!--                        <div class="form-group">
+                                              <label for="inputProName" class="col-sm-2 control-label">简介</label>
+                                              <div class="col-sm-9">
+                                                  <textarea name="description" id="inputDescription" class="form-control" rows="3"
+                                                            placeholder="请填写摘要">{$vo.description}</textarea>
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="inputContent" class="col-sm-2 control-label">内容</label>
+                                              <div class="col-sm-9">
+                                                  <textarea name="content" id="inputContent"
+                                                            style="height: 370px;">{$vo.content}</textarea>
+                                              </div>
+                                          </div>-->
+
+                  <div class="form-group">
+                     <label class="col-sm-2 control-label">大标题</label>
+                     <div class="col-sm-5">
+                        <input type="text" class="form-control" name="bigtitle" value="{$detailData.bigtitle}" placeholder="请输入大标题" required="required" />
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="inputContent" class="col-sm-2 control-label">内容</label>
+                     <div class="col-sm-9">
+                        <textarea name="description" id="inputContent" class="form-control" rows="5" placeholder="请填写内容">{$detailData.description}</textarea>
+                     </div>
+                  </div>
+
+                  <if condition="!empty($detailData['content'])">
+                     <foreach name="detailData['content']" item="vo">
+                        <div class="panel panel-default">
+                           <div class="panel-body">
+                              <div class="form-group">
+                                 <label  for="" class="col-sm-2 control-label">子标题</label>
+                                 <div class="col-sm-9">
+                                    <input type="text"  id="" name="subtitle[]" class="form-control" placeholder="标题" required="required" value="{$vo.subtitle}" />
+                                 </div>
+                              </div>
+
+                              <div class="form-group">
+                                 <label  class="col-sm-2 control-label">子段落</label>
+                                 <div class="col-sm-9">
+                                    <textarea  name="subcontent[]" rows="5" class="form-control">{$vo.subcontent}</textarea>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </foreach>
+                     <else/>
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <div class="form-group">
+                              <label  for="" class="col-sm-2 control-label">子标题</label>
+                              <div class="col-sm-9">
+                                 <input type="text"  id="" name="subtitle[]" class="form-control" placeholder="标题" required="required" value=" " />
+                              </div>
+                           </div>
+
+                           <div class="form-group">
+                              <label  class="col-sm-2 control-label">子段落</label>
+                              <div class="col-sm-9">
+                                 <textarea  name="subcontent[]" rows="5" class="form-control"></textarea>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </if>
+                  <div id="position"></div>
+                  <div class="panel panel-default app_pictures">
+                     <div class="panel-body">
+                        <div class="form-group">
+                           <label for="BrowerPicture" class="col-sm-2 control-label">子内容图片</label>
+                           <div class="col-sm-9">
+                              <div class="btn btn-success up-picture-btn">
+                                 <span><em class="glyphicon glyphicon-plus-sign"></em>上传图片</span>
+                                 <input id="app_picture_upload" type="file" name="mypic1">
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form-group">
+                           <label for="" class="col-sm-2 control-label"></label>
+                           <div class="col-sm-9">
+                              <div class="app_picture_tip"></div>
+                              <div id="app_picture_show" class="picture_show">
+                                 <foreach name="detailData.subimg" item='value'>
+                                    <div class="picture_item"><img src="{$value.url}" width="120"><div class="picture_del">删除</div><div class="picture_go_up">前移</div><input type="hidden" name="subimgurls[]" value="{$value.url}" /></div>
+                                 </foreach>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <div class="form-group">
+                           <label for="inputExample" class="col-sm-2 control-label">成功案例</label>
+                           <div class="col-sm-9">
+                              <textarea name="example" id="inputExample" class="form-control" rows="2" placeholder="请填写成功案例">{$detailData.example}</textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="col-sm-offset-2 col-sm-9">
+                        <input type="hidden" name="id" value="{$detailData.id}"/>
+                        <input type="hidden" name="pid" value="{$pid}"/>
+                        <button class="btn btn-success up-picture-btn" id="add_child">
+                           <span class="glyphicon glyphicon-plus-sign">添加子内容</span>
+                        </button>
+                        <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-saved"></i>
+                           保存
+                        </button>
+                     </div>
+                  </div>
+
+               </form>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+</block>

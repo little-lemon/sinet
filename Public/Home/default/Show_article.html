@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+
+		<title><yang:sitetitle/></title>
+		<meta name="keywords" content="<yang:sitekeywords />" />
+		<meta name="description" content="<yang:sitedescription />" />
+
+		<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css"/>
+	    <link rel="stylesheet" href="__PUBLIC__/css/style.css"/>
+	    <link rel="stylesheet" href="__PUBLIC__/css/header.css"/>	 
+	    <link rel="stylesheet" href="__PUBLIC__/css/fotter.css"/>
+	    <link rel="stylesheet" href="__PUBLIC__/css/newDetails.css"/>
+		<link rel="stylesheet" href="__PUBLIC__/css/media.css"/>
+		<link rel="stylesheet" href="__PUBLIC__/css/public.css"/>
+	    
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+		<!--[if lte IE 8]>
+		<script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+		<![endif]-->
+	    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+	    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+	    <script type="text/javascript">
+	        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+	    </script>
+	    
+	    
+	</head>
+
+	<body>
+		<!--引入导航-->
+		<include file="Public:header" cid="{$cate['pid']}" />
+
+		<!-- 正文 -->
+		<div id="newDetails" class="newDetails" >
+			<div class="title clearfix">
+				<img src="__PUBLIC__/img/introduce/icon_056.png" alt="" class="img-responsive " />
+				<yang:position />
+				<img src="__PUBLIC__/img/introduce/jt_11.png" alt="" class="img-responsive jt" />
+				<div class="js current">
+					正文
+				</div>
+			</div>
+			<div class="context">
+				<div class="begin">
+					<h1 class="publicTitle">{$content.title}</h1>
+					<div class="time">
+						发布时间：{$content.publishtime|date='Y-m-d H:m',###}  &nbsp; 浏览次数：<yang:click />
+					</div>
+				</div>
+				<!--<img src="img/new_png.png" alt="" class="img-responsive" />-->
+				<div class="zw">					
+					<if condition='$content.litpic neq ""'>
+						<img src="{$content.litpic}" class="img-responsive" />	
+					</if>					
+					<br />
+					{$content.content}
+				</div>
+			</div>
+		</div>
+		
+		<!--引入友情链接-->
+		<include file="Public:footer"/>
+
+	</body>
+
+</html>

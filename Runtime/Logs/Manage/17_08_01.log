@@ -1,0 +1,1623 @@
+[ 2017-08-01T17:07:20+08:00 ] 10.50.0.66 /sim.php?s=/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.020001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.022002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025002s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-08-01T17:07:21+08:00 ] 10.50.0.66 /sim.php?s=/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:07:21+08:00 ] 10.50.0.66 /sim.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-08-01T17:07:32+08:00 ] 10.50.0.66 /sim.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-08-01T17:07:37+08:00 ] 10.50.0.66 /sim.php?s=/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_admin` [ RunTime:0.0600s ]
+SQL: SELECT * FROM si_admin WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0150s ]
+SQL: UPDATE si_admin SET `logintime`='1501578456',`loginip`='10.50.0.66' WHERE `id` = 1 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `si_role_user` [ RunTime:0.0550s ]
+SQL: SELECT `role_id` FROM si_role_user WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-01T17:07:37+08:00 ] 10.50.0.66 /sim.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:07:37+08:00 ] 10.50.0.66 /sim.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0370s ]
+SQL: SELECT * FROM si_menu WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0190s ]
+SQL: SELECT * FROM si_menu WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:07:37+08:00 ] 10.50.0.66 /sim.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_article` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `si_product` [ RunTime:0.0390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_article LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_article WHERE ( cid=18 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_article WHERE ( cid=57 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_article WHERE ( cid=41 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_product LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_product WHERE ( cid=21 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_product WHERE ( cid=22 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_product WHERE ( cid=23 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:07:38+08:00 ] 10.50.0.66 /sim.php?s=/Index/getParentCate&pid=0&rnd=43353
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_category` [ RunTime:0.0860s ]
+SQL: SHOW COLUMNS FROM `si_model` [ RunTime:0.0380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_category category LEFT JOIN si_model model ON category.modelid = model.id  WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.litpic AS litpic,model.name AS modelname,model.tablename AS tablename FROM si_category category LEFT JOIN si_model model ON category.modelid = model.id  WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0140s ]
+
+[ 2017-08-01T17:07:49+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:08:01+08:00 ] 10.50.0.66 /sim.php?s=/Menu/add/pid/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0110s ]
+SQL: SELECT * FROM si_menu ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:08:04+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0100s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:08:49+08:00 ] 10.50.0.66 /sim.php?s=/Menu/edit/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_menu WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM si_menu ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:09:00+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0210s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:09:10+08:00 ] 10.50.0.66 /sim.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_config` [ RunTime:0.0360s ]
+SQL: SELECT * FROM si_config WHERE ( id not in (6,7,9,11,12,15,40) ) ORDER BY groupid,sort  [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `si_iteminfo` [ RunTime:0.0500s ]
+SQL: SELECT * FROM si_iteminfo WHERE `group` = 'configgroup' ORDER BY sort,id  [ RunTime:0.0100s ]
+SQL: SELECT * FROM si_iteminfo WHERE `group` = 'configtype' ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:09:26+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:09:37+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_admin` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_admin WHERE `id` > '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`encrypt`,`realname`,`email`,`usertype`,`logintime`,`loginip`,`islock` FROM si_admin WHERE `id` > '0' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_role_user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0410s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '1'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '6'  [ RunTime:0.0110s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '7'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '8'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '12'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '13'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '17'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '16'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:09:40+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_role LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM si_role LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:09:45+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/access/rid/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_access` [ RunTime:0.0330s ]
+SQL: SELECT `node_id` FROM si_access WHERE `role_id` = 6  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0260s ]
+SQL: SELECT * FROM si_node WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `si_category` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`id` FROM si_category WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: select b.catid from si_category as a join si_category_access b on a.pid = 0 and a.id = b.catid and b.roleid = 6 [ RunTime:0.0360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:09:56+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_admin WHERE `id` > '0' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`encrypt`,`realname`,`email`,`usertype`,`logintime`,`loginip`,`islock` FROM si_admin WHERE `id` > '0' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_role_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0070s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '1'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '6'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '7'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '8'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '12'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '13'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '17'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '16'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:10:01+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0110s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:10:08+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/editNode/id/18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_node WHERE `id` = 18 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:10:11+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:10:31+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:10:36+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/editNode/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM si_node WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:10:38+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:11:04+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/addNode/pid/1/level/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:11:07+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0110s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:11:09+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/addNode/pid/2/level/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:11:11+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0080s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:11:33+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:00+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/addNode/level/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:12:09+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0080s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:11+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/addNode/pid/1/level/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:19+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0110s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:20+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/addNode/pid/2/level/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:12:30+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:12:36+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/addNode/level/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:38+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0100s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:44+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/editNode/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0080s ]
+SQL: SELECT * FROM si_node WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:46+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0080s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:49+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_role LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM si_role LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:12:58+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/access/rid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_access` [ RunTime:0.0060s ]
+SQL: SELECT `node_id` FROM si_access WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_node WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `si_category` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`id` FROM si_category WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: select b.catid from si_category as a join si_category_access b on a.pid = 0 and a.id = b.catid and b.roleid = 1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:13:01+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_role LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM si_role LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:13:04+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/access/rid/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_access` [ RunTime:0.0060s ]
+SQL: SELECT `node_id` FROM si_access WHERE `role_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_node WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `si_category` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`id` FROM si_category WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: select b.catid from si_category as a join si_category_access b on a.pid = 0 and a.id = b.catid and b.roleid = 6 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:13:49+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_role LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM si_role LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:13:56+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/access/rid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_access` [ RunTime:0.0070s ]
+SQL: SELECT `node_id` FROM si_access WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_node WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `si_category` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`id` FROM si_category WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: select b.catid from si_category as a join si_category_access b on a.pid = 0 and a.id = b.catid and b.roleid = 1 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:14:23+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_admin WHERE `id` > '0' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`encrypt`,`realname`,`email`,`usertype`,`logintime`,`loginip`,`islock` FROM si_admin WHERE `id` > '0' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_role_user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0060s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '1'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '6'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '7'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '8'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '12'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '13'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '17'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '16'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:14:30+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_admin` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_admin WHERE `id` > '0' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`encrypt`,`realname`,`email`,`usertype`,`logintime`,`loginip`,`islock` FROM si_admin WHERE `id` > '0' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_role_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0070s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '1'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '6'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '7'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '8'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '12'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '13'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '17'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '16'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:14:34+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:14:56+08:00 ] 10.50.0.66 /sim.php?s=/Menu/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_menu ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:15:01+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:15:23+08:00 ] 10.50.0.66 /sim.php?s=/Menu/add/pid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM si_menu ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:15:33+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:15:34+08:00 ] 10.50.0.66 /sim.php?s=/Menu/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_menu ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:16:00+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:46:26+08:00 ] 10.50.0.66 /sim.php?s=/Menu/add/pid/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM si_menu ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-01T17:53:43+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_admin WHERE `id` > '0' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`encrypt`,`realname`,`email`,`usertype`,`logintime`,`loginip`,`islock` FROM si_admin WHERE `id` > '0' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_role_user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0070s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '1'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '6'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '7'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '8'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '12'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '13'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '17'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '16'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-08-01T17:53:49+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_role LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM si_role LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-08-01T17:53:54+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/access/rid/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_access` [ RunTime:0.0070s ]
+SQL: SELECT `node_id` FROM si_access WHERE `role_id` = 7  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM si_node WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `si_category` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`id` FROM si_category WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: select b.catid from si_category as a join si_category_access b on a.pid = 0 and a.id = b.catid and b.roleid = 7 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:54:42+08:00 ] 10.50.0.66 /sim.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM si_menu ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:54:46+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_admin WHERE `id` > '0' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`encrypt`,`realname`,`email`,`usertype`,`logintime`,`loginip`,`islock` FROM si_admin WHERE `id` > '0' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `si_role_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0060s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '1'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '6'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '7'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '8'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '12'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '13'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '17'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '16'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:54:47+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_role LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM si_role LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:54:50+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_admin` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_admin WHERE `id` > '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`encrypt`,`realname`,`email`,`usertype`,`logintime`,`loginip`,`islock` FROM si_admin WHERE `id` > '0' LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `si_role_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0070s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '1'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '6'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '7'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '8'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '12'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '13'  [ RunTime:0.0000s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '17'  [ RunTime:0.0010s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM si_role_user role_user  JOIN si_role role ON role_user.role_id = role.id  WHERE role_user.user_id = '16'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:54:55+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_role` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM si_role LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM si_role LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-01T17:54:56+08:00 ] 10.50.0.66 /sim.php?s=/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mysql::parseKey() should be compatible with Think\Db\Driver::parseKey(&$key) D:\ying\upupw\htdocs\Include\Library\Think\Db\Driver\Mysql.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `si_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM si_node ORDER BY sort  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+  Options -Indexes +FollowSymLinks -MultiViews
+  RewriteEngine On
+
+  RewriteBase /
+  
+  #防盗链
+  RewriteCond %{HTTP_REFERER} !^$
+  RewriteCond %{HTTP_REFERER} !^http://127.0.0.1(/)?.*$ [NC]
+  RewriteCond %{HTTP_REFERER} !^http://localhost(/)?.*$ [NC]
+  RewriteCond %{HTTP_REFERER} !^http://10.52.0.101(/)?.*$ [NC]
+  RewriteCond %{HTTP_REFERER} !^http://10.4..*(/)?.*$ [NC]
+  RewriteCond %{HTTP_REFERER} !^http://(www\.)?si.net.cn(/)?.*$ [NC]
+  RewriteCond %{HTTP_REFERER} !^http://(www\.)?baidu.com(/)?.*$ [NC]
+  RewriteRule .*\.(ico|jpge|gif|jpg|swf|flv|png|bmp)$ https://www.upyun.com/static/img/beian.d0289dc.png [R,NC,L]
+  
+  #防黑客
+  RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]
+  RewriteCond %{QUERY_STRING} base64_encode.*(.*) [OR]
+  RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+  RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
+  RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
+  RewriteRule ^(.*)$ / [F,L]
+  
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+  
+</IfModule>

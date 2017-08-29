@@ -1,0 +1,236 @@
+#contact{
+	width: 84%;
+	margin:0 auto;
+	height: auto;
+	position: relative;
+	margin-top:20px;
+	max-width: 1200px;
+	font-family: '微软雅黑';
+}
+
+#contact .lx{
+	width: 100%;
+	border-bottom: 1px solid #ECEEF3;
+	margin-top: 1%;
+}
+
+#contact .lx p{
+	width: 18%;
+	color: rgb(79,129,189);
+	border-bottom: 3px solid rgb(79,129,189);
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 600;
+	line-height: 1.8;
+}
+#contact ul{
+	width: 67%;
+	margin: 0 auto;
+	margin-top: 2%;
+	border: 1px solid #EAEDF2;
+}
+#contact ul li{
+	width: 25%;
+	height: 272px;
+	float: left;
+	border-right: 1px solid #EAEDF2;
+}
+#contact ul li.current{
+	border: 0;
+}
+
+
+#contact ul li .imgs{
+	background-color: #4DEB79;
+	text-align: center;
+}
+#contact ul li .imgs.f2{
+	background-color: #F8BA3C;
+}
+#contact ul li .imgs.f3{
+	background-color: #59DAF6;
+}
+#contact ul li .imgs.f4{
+	background-color: #6AD455;
+}
+
+
+#contact ul li .imgs img{
+	margin: 10% 0;
+}
+#contact ul li .cont{
+	width: 100%;
+	margin-bottom: 28%;
+}
+
+#contact ul li .cont p{
+	color:#9A9999;
+	text-align: center;
+	margin: 10% auto;
+	font-size: 1.4em;
+}
+
+#contact ul li .cont .conts{
+	width: 90%;
+	margin: 0 auto;
+}
+
+#contact ul li .cont .conts .dh{
+	color: #9A9999;
+	font-size: 1em;
+}
+
+#contact dl{
+	width: 69%;
+	margin: 0 auto;
+	margin-top: 5%;
+	border-top: 1px solid #EAEDF2;
+	font-size: 15px;
+}
+
+#contact dl dd{
+	width: 50%;
+	float: left;
+	margin-bottom: 4%;
+}
+
+#contact dl dd p{
+	color:rgb(79,129,189);
+	font-size: 1.1em;
+	margin: 5% 0;
+	font-weight: 600;
+}
+#contact dl dd div{
+	color:#313232;
+	font-size: 1.1em;
+	margin-bottom: 2%;
+}
+#contact dl dd div span{
+	color:#909191;
+	margin-left: 2px;
+}
+
+
+#contact .map{
+	width: 68%;
+	margin: 5% auto;
+}
+
+#contact .map .leftmap{
+	width:45%;
+	border: 1px solid #C8D8F2;
+	float: left;
+	height: 268px;
+}
+
+#contact .map .rightinfo{
+	float: left;
+	width:49%;
+	margin-left:6%;
+}
+
+#contact .map .rightinfo .title{
+	color:rgb(79,129,189);
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	letter-spacing: 1px;
+	/*margin-top: 3%;*/
+}
+#contact .map .rightinfo .title img{
+	width: 16%;
+}
+#contact .map .rightinfo p{
+	width: 100%;
+	text-align: left;
+	font-size: 17px;
+	color: #868788;
+	margin-top: 2%;
+	letter-spacing: .5px;
+}
+#contact .map .rightinfo p b{
+	color:#313232;
+	font-weight: 400;
+}
+
+@media (max-width: 768px){
+	#contact{
+		margin-top:20px;
+	}
+	#contact .lx p{
+		width: 30%;
+	}
+	#contact ul{
+		border:0;
+	}
+	#contact ul li{
+		width: 50%;
+		margin-top: 1em;
+		border: 1px solid #EAEDF2 !important;
+	}
+	#contact dl dd{
+		width: 50%;
+		height: 190px;
+	}
+	#contact dl dd div{
+		font-size: 1em;
+	}
+
+	#contact .map .leftmap{
+		width:100%;
+		border: 1px solid #C8D8F2;
+		float: left;
+		margin: 2% 0;
+		height: 230px;
+	}
+
+	#contact .map .rightinfo{
+		float: left;
+		width:100%;
+		margin-left:0;
+	}
+}
+@media (max-width: 666px){
+	#contact dl {
+		width: 90%;
+	}
+	#contact .lx p{
+		width: 30%;
+	}
+	#contact ul{
+		border:0;
+	}
+	#contact ul li{
+		width: 100%;
+		margin-top: 1em;
+		border: 1px solid #EAEDF2 !important;
+	}
+	#contact dl dd{
+		width: 100%;
+	}
+	#contact .map{
+		width:90%;
+	}
+	#contact .map .rightinfo .title{
+		font-size: 15px;
+	}
+	#contact .map .rightinfo p{
+		font-size: 14px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+
+    <title><yang:sitetitle/></title>
+    <meta name="keywords" content="<yang:sitekeywords />" />
+    <meta name="description" content="<yang:sitedescription />" />
+
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/style.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/header.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/banners.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/fotter.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/newDetails.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/media.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/public.css"/>
+
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+	<!--[if lte IE 8]>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+	<![endif]-->
+    
+	<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+    </script>
+
+</head>
+
+<body>
+<!--引入导航-->
+<include file="Public:header" cid="11" />
+
+<div id="banners" class="banners">
+    <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_02.png);">
+        <div class="contain">
+            <div class="xq">
+                <div class="title">
+                    走进海峡
+                </div>
+                <p>福建省海峡信息技术有限公司是福建省科技厅下属的省科技信息研究所控股、员工参股的国有企业</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 正文 -->
+
+<div id="newDetails" class="newDetails" style="margin-top: 20px">
+
+    <div class="title clearfix">
+        <img src="__PUBLIC__/img/introduce/icon_056.png" alt="" class="img-responsive " />
+        <yang:position />
+        <img src="__PUBLIC__/img/introduce/jt_11.png" alt="" class="img-responsive jt" />
+        <a href="{:U('List/index','cid=17')}" class="js">企业文化</a>
+        <img src="__PUBLIC__/img/introduce/jt_11.png" alt="" class="img-responsive jt" />
+        <div class="js current">
+            度假之旅
+        </div>
+    </div>
+
+
+    <div class="context">
+        <if condition="$pdetail.title neq ''">
+            <div class="begin">
+                <h1 class="publicTitle">{$pdetail.title}</h1>
+            </div>
+        </if>
+
+        <div class="zw">
+            <img src="{$pdetail.pic}" class="img-responsive" style="width: 100%" />
+            <br/>
+            <p>{$pdetail.content}</p>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!--引入友情链接-->
+<include file="Public:footer"/>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+$(function(){$(".begin .menu ul li").click(function(){var a=$(this),b=$(".begin .menu ul li").index($(this));a.addClass("current").siblings("li").removeClass("current");$(".begin .content ul li").eq(b).removeClass("none").siblings("li").addClass("none")})});

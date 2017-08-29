@@ -1,0 +1,23 @@
+.tab-back {
+  color: #fff;
+  line-height: 20px;
+  padding: 4px 15px 4px 18px;
+  border-right: 1px solid #FFF;
+  cursor: hand;
+  cursor: pointer;
+  background-color: #003580;
+}
+
+.tab-hover {
+  color: #fff;
+  background: #94C9D3;
+  line-height: 20px;
+  padding: 4px 15px 4px 18px;
+  border-right: 1px solid #FFF;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.none {
+  display:none;
+}

@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+
+    <title><yang:sitetitle/></title>
+    <meta name="keywords" content="<yang:sitekeywords />" />
+    <meta name="description" content="<yang:sitedescription />" />
+
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/header.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/banners.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/fotter.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/product.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/safeProduct.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/media.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/public.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/animate.min.css">
+
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+	<!--[if lte IE 8]>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+	<![endif]-->
+    
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/zepto/0.8/zepto.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+        !window.Zepto && document.write('<script src=__PUBLIC__/js/plugin/zepto.min.js><\/script>');
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/js/project/product.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/project/safeProduct.js"></script>
+
+</head>
+
+<body>
+<!--引入导航-->
+<include file="Public:header" cid="{$cate['pid']}" />
+
+<!-- 一张大图 -->
+<div id="banners" class="banners">
+    <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_03.png);">
+        <div class="contain">
+            <div class="xq">
+                <div class="title">
+                    安全产品
+                </div>
+                <p>黑盾系列网络安全产品覆盖政府、医疗、教育、金融、能源、电力、交通等多个行业，现已为国内数千家政府和企事业单位提供信息安全保护。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 产品详细主体 -->
+<div id="safeProduct" >
+    <div class="title clearfix">
+        <img src="__PUBLIC__/img/introduce/icon_056.png" alt="" class="img-responsive" />
+        <div><yang:position /></div>
+    </div>
+
+    <div class="context">
+        <div class="begin">
+            <div class="menu">
+                <if condition="count($proList) gt 1">
+                    <ul class="clearfix">
+                        <foreach name="proList" item="vo" key="k" >
+                            <if condition="$k eq 0">
+                                <li class="current">{$vo.title}</li>
+                                <else />
+                                <li>{$vo.title}</li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </if>
+            </div>
+            <div class="content">
+
+                <ul>
+                    <foreach name="proList" item="vo" key="k" >
+
+
+                        <if condition="$k eq 0">
+                            <li class="clearfix">
+                                <else/>
+                            <li class="clearfix none">
+                        </if>
+                        <div class="pathone clearfix">
+                            <div class="imgs">
+                                <!-- <img src="img/path1.png" alt="" class="img-responsive" />-->
+                                <img src="{$vo.litpic}" class="img-responsive"  />
+                            </div>
+                            <div class="pathcontent">
+
+                                <div class="productName publicSecTitle">
+                                    <img src="__PUBLIC__/img/start.png">产品概述<img src="{$vo.litpic}" class="img-responsive"  />
+                                </div>
+                                <p class="publicp" style="text-indent: 0 !important;">
+                                    {$vo.description}
+                                </p>
+                            </div>
+                        </div>
+                        <!--<php>var_dump($adcontent);</php>-->
+
+                        <if condition="!empty($adcontent)">
+                            <div class="pathtwo">
+                                <div class="bg">
+
+                                </div>
+
+                                <div class="pathBottom publicSecTitle">
+                                    <img src="__PUBLIC__/img/start.png">技术优势
+                                </div>
+
+                                <div class="advantage clearfix">.
+
+                                    <foreach name="adcontent" item="vo2" key="k2" >
+                                        <if condition="$vo2.title neq '' ">
+                                            <div class="fk">
+                                                <img src="__PUBLIC__/img/fk.png" alt="" class="img-responsive" />
+                                                <div class="bt">
+                                                    0{$k2+1}
+                                                </div>
+                                                <p class="publicp">
+                                                    {$vo2.title}
+                                                </p>
+                                            </div>
+                                        </if>
+                                    </foreach>
+
+                                </div>
+                            </div>
+                        </if>
+
+                        <if condition="!empty($vo['application'])">
+                            <div class="pathThree">
+
+                                <div class="pathBottom publicSecTitle">
+                                    <img src="__PUBLIC__/img/start.png">典型应用场景
+                                </div>
+                                <div class="pathNrong">
+                                    <foreach name="vo['application']" item="vo3" key="k3" >
+                                        <dl>
+                                            <dt>
+                                            <span>
+                                                <img src="__PUBLIC__/img/safe.png"  />
+                                                	典型应用{$k3+1}：{$vo3.title}
+                                            </span>
+                                            </dt>
+                                            <dd>
+                                                <p class="publicp">{$vo3.content}</p>
+                                                <if condition="!empty($vo3['picurl'])">
+                                                    <img src="{$vo3.picurl}" alt="" class="img-responsive" />
+                                                </if>
+                                            </dd>
+                                        </dl>
+
+                                    </foreach>
+                                </div>
+                            </div>
+                        </if>
+
+                        </li>
+                    </foreach>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 鼠标到技术优势出现的提示框 -->
+    <foreach name="adcontent" item="vo2" >
+        <div class="topbox">
+            <div class="xsj"></div>
+            {$vo2.content}
+        </div>
+    </foreach>
+
+    <div id="layerHB" class="animated">
+        <foreach name="adcontent" item="vo2" >
+            <div class="topbox animated">
+                <div class="xsj"></div>
+                {$vo2.content}
+            </div>
+        </foreach>
+    </div>
+
+
+</div>
+
+
+<include file="Public:footer"/>
+</body>
+</html>

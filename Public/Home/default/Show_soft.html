@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+
+	<title><yang:sitetitle/></title>
+	<meta name="keywords" content="<yang:sitekeywords />" />
+	<meta name="description" content="<yang:sitedescription />" />
+
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/style.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/header.css"/>	 
+    <link rel="stylesheet" href="__PUBLIC__/css/fotter.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/newDetails.css"/>
+    
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+	<!--[if lte IE 8]>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+    </script>
+</head>
+
+<body>
+
+	<include file="Public:header" />
+
+
+	<div class="container" style="margin-top: 120px;">
+		<!--$content是控制器传来的参数-->		
+		<h3>{$content.title}</h3>
+		<div style="border:1px solid #FFE0B4; background:#ffeed5; "><b>图片说明</b></div>
+		<p class="text-center" style="margin-top: 5px;"><img src="{$content.litpic}" /></p>
+		
+		<div style="border:1px solid #FFE0B4; background:#ffeed5; "><b>相关信息</b></div>
+		<div>
+			<p>说明：{$content.updatelog}</p>
+			<p>版本号：{$content.version}</p>
+			<p>运行环境：{$content.os}</p>
+			<p>文件大小：{$content.filesize} </p>				
+		</div>
+		<div style="border:1px solid #FFE0B4; background:#ffeed5; "><b>具体内容</b></div>
+		<span class="text-muted">{$content.content}</span>
+		
+		<div style="border:1px solid #FFE0B4; background:#ffeed5; "><b>下载地址</b></div>
+		<foreach name="content['downlink']" item="v">
+			<p><a href="{$v.url}" target="_blank" >{$v.title }</a></p>
+		</foreach>
+		
+		<div style="text-align: center;">
+			<p class="text-success">↑上一篇：<yang:prev /> ↓下一篇：<yang:next /></p>			 	
+		</div>
+		
+	</div>
+
+
+
+<div class="fotter current">福建省海峡信息技术有限公司版权所有 联系:hxzhb@heidun.net 闽ICP备06011901号 © 1999-2017 Fujian Strait Information Corporation. All Rights Reserved.</div>
+
+</body>
+</html>

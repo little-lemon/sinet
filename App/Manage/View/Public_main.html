@@ -1,0 +1,76 @@
+<extend name="Public:base" />
+
+<block name="content">
+<div class="row">
+
+	<div class="col-md-6">
+		<div class="panel panel-info">
+			<div class="panel-heading">管理员相关信息</div>
+			<div class="panel-body">
+				您好，{$Think.session.yang_adm_username} <br />
+				上次登录时间：{$Think.session.yang_adm_logintime}<br />
+				上次登录IP：{$Think.session.yang_adm_loginip}<br />
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-info">
+			<div class="panel-heading">系统相关信息</div>
+			<div class="panel-body">
+				服务器环境：{$os} <br />
+				Web服务器：{$software}<br />
+				MySQL 版本：{$mysql_ver}<br />
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<div class="panel panel-danger">
+			<div class="panel-heading">站点信息相关统计</div>
+			<div class="panel-body">
+				所有信息数量：<span class="label label-danger">{$article['sum']}</span>&nbsp;&nbsp;&nbsp;
+				安全公告数量：<span class="label label-danger">{$article['security']}</span>&nbsp;&nbsp;&nbsp;
+				新闻信息数量：<span class="label label-danger">{$article['news']}</span>&nbsp;&nbsp;&nbsp;
+				<!--招聘信息数量：<span class="label label-danger">{$article['work']}</span>&nbsp;&nbsp;&nbsp;-->
+				<!--<hr />-->
+				<!--所有产品数量：<span class="label label-info">{$product['sum']}</span>&nbsp;&nbsp;&nbsp;-->
+				<!--防火墙产品数量：<span class="label label-info">{$product['fw']}</span>&nbsp;&nbsp;&nbsp;-->
+				<!--入侵检测产品数量：<span class="label label-info">{$product['ruqing']}</span>&nbsp;&nbsp;&nbsp;-->
+				<!--安全审计产品数量：<span class="label label-info">{$product['shenji']}</span>&nbsp;&nbsp;&nbsp;-->
+				<!--其他产品数量：<span class="label label-info">{$product['other']}</span>&nbsp;&nbsp;&nbsp;-->
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<div class="panel panel-info">
+			<div class="panel-heading">相关指南</div>
+			<div class="panel-body">
+
+				1.信息总览：显示数据概况<br/>
+				2.导航菜单：对站点首页导航栏的功能菜单进行管理<br/>
+				3.网站内容管理：站点所有内容管理均在此处进行操作<br/>
+				4.系统设置相关：<br/>
+				<ol type="A">
+					<li>友情链接：站点底部友情链接管理</li>
+					<li>清除缓存：清除站点缓存</li>
+					<!--<li>模型控制器：管理页面模型</li>-->
+					<!--<li>视图模板：对页面显示的模板进行管理</li>-->
+					<li>系统菜单：后台管理系统的功能</li>
+					<li>数据库管理：显示数据库所有表</li>
+					<!--<li>已上传文件管理：显示已经上传的附件</li>-->
+				</ol>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+</div>
+</block>
+
+

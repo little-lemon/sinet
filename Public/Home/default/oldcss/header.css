@@ -1,0 +1,197 @@
+/*导航栏*/
+.navbar-default .navbar-nav {
+	position: relative;
+	top: 2px;
+}
+.navbar-default .navbar-nav > li {
+	position: relative;
+}
+.navbar-default .navbar-nav > li > a{
+	font-size:16px;
+	font-weight: 700;
+}
+.navbar-default .navbar-nav > li > a.current{
+	color:#3281da;
+}
+/*.navbar-default .navbar-nav > li > a:hover{*/
+/*color:#3281da;*/
+/*}*/
+/*导航栏下拉菜单*/
+.navbar-default .navbar-nav > li > ul{
+	background:rgba(250, 250, 250, 0.9);
+	/*text-align: left;*/
+	top: 90px;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 2px 5px #bbb;
+	position: absolute;
+	display: none;
+	background:rgb(250, 250, 250)\9;
+	border:1px solid #bbb\9;
+	border-top: 0\9;
+	font-size: 14px;
+	padding:5% 12px;
+
+}
+.navbar-default .navbar-nav > li > ul.safProduct ul.cush{
+	padding-right: 98% !important;
+}
+.navbar-default .navbar-nav > li > ul > li{
+	white-space: nowrap;
+	/*margin: 10px 20px;*/
+}
+.navbar-default .navbar-nav > li > ul > li > a{
+	color: #87878d;
+	text-decoration: none;
+}
+/*下拉菜单滑动背影*/
+/*.navbar-default .navbar-nav > li > ul > li>a:hover{*/
+/*color:#286090;*/
+/*text-decoration: underline;*/
+/*!*background-color: black;*!*/
+/*}*/
+
+/*.navbar-default .navbar-nav > li:hover > ul{*/
+/*display: block;*/
+/*}*/
+.navbar-default .navbar-nav > li > ul.safProduct{
+	/*padding: 4% 0% 0% 16%;*/
+	/*padding-right: 13% !important;*/
+
+}
+.navbar-default .navbar-nav > li > ul.safProduct dl {
+	white-space: nowrap;
+	vertical-align: top;
+}
+.navbar-default .navbar-nav > li > ul.safProduct dl dt{
+	width: auto;
+	height:auto;
+	display:inline-block;
+	font-weight: 400;
+	vertical-align: top;
+	/*border: 1px solid;
+	border-left-width:0;
+	border-top-width:0;
+	border-bottom-width:0;*/
+	margin: 2% 0;
+	/*border-image: linear-gradient(#EAEFF6,#CBD9E9,#EAEFF6) 30 30 30 30;
+	margin-right: 3%;
+	padding-right: 4%;*/
+}
+
+
+.navbar-default .navbar-nav > li > ul.safProduct dl .jbt{
+	display:inline-block;
+	height:280px;
+}
+
+.navbar-default .navbar-nav > li > ul.safProduct dl .jbt img{
+	height: 100%;
+    margin: 20px 9px;
+}
+
+.navbar-default .navbar-nav > li > ul.safProduct dl dd{
+	width: auto;
+	height:auto;
+	display:inline-block;
+	font-weight: 400;
+	vertical-align: top;
+	margin: 2% 0;
+}
+
+.navbar-default .navbar-nav > li > ul > li{
+	white-space: nowrap;
+	/*background-color: #E0E7F3;*/
+	margin:3% 0;
+}
+.navbar-default .navbar-nav > li > ul.safProduct li{
+	white-space: nowrap;
+	/*padding: 5px 20px;*/
+	margin:2% 0% 0;
+	/*background-color: #E0E7F3;*/
+	cursor: pointer;
+}
+.navbar-default .navbar-nav > li > ul.safProduct dl dt > li:hover,.navbar-default .navbar-nav > li > ul.safProduct dl dd > li:hover{
+	background: #62A1E8;
+}
+
+.navbar-default .navbar-nav > li > ul.safProduct dl dt > li:hover > a,.navbar-default .navbar-nav > li > ul.safProduct dl dd > li:hover > a{
+	color: #fff;
+}
+
+/*.navbar-default .navbar-nav > li > ul.safProduct li a{
+	color: #87878d;
+	text-decoration: none;
+}*/
+.navbar-default .navbar-nav > li > ul.safProduct li a{
+	color: #87878d;
+	text-decoration: none;
+	padding: 5px 20px;
+    display: block;
+}
+.navbar-default .navbar-nav > li > ul > li > a{
+	color: #87878d;
+	text-decoration: none;
+	padding: 5px 20px 5px;
+	display:block;
+}
+.navbar-default .navbar-nav > li > ul > li > a:hover{
+// border-bottom: 3px solid #3281DA;
+	background: #62A1E8;
+	color:#fff !important;
+
+}
+
+// .navbar-default .navbar-nav > li > ul.cush{
+// 	padding-right: 16% !important;
+// }
+
+// .navbar-default .navbar-nav > li.currs > a{
+// 	color:#62A1E8 !important;
+// }
+
+// .navbar-default .navbar-nav > li.currs{
+// 	height: 90px;
+// }
+
+/*.navbar-default .navbar-nav > li.actived ul{*/
+	/*padding: 4% 35% 4% 17%;*/
+	/*padding-right: 60% !important;*/
+
+/*}*/
+.navbar-default .navbar-nav > li.actived > a{
+	color:#62A1E8 !important;
+}
+
+
+
+
+.navbar-default .navbar-nav > li:hover{
+		border-bottom:3px solid #3281da ;
+	height: 90px;
+	background: #E9F2F8;
+}
+.navbar-default .navbar-nav > li:hover > a{
+	color:#62A1E8 !important;
+}
+
+
+
+.navbar-brand{
+	background: url(../img/bai_logo.png) no-repeat center center;
+	width:220px;
+	height:50px;
+	padding:2.5em 0;
+	box-sizing: border-box;
+}
+
+
+@media (max-width: 769px){
+	.navbar-default .navbar-nav > li > ul{
+		opacity:0;
+	}
+	.navbar-default .navbar-nav > li:hover{
+		border-bottom:0 ;
+		height:auto;
+		background: #E9F2F8;
+	}
+}

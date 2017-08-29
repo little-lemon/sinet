@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+
+    <title><yang:sitetitle/></title>
+    <meta name="keywords" content="<yang:sitekeywords />" />
+    <meta name="description" content="<yang:sitedescription />" />
+
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/header.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/media.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/fotter.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/newDetails.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/details.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/banners.css"/>
+
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+	<!--[if lte IE 8]>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+	<![endif]-->
+	
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+    </script>
+    
+    <script type="text/javascript" src="__PUBLIC__/js/project/header.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/jquery.easing.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/project/honor.js"></script>
+
+</head>
+<body>
+<!--引入导航-->
+<include file="Public:header" cid="{$cate['pid']}"/>
+<!--此处开始添加自定义内容-->
+<div id="banners" class="banners">
+    <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_02.png);">
+        <div class="contain">
+            <div class="xq">
+                <div class="title">
+                    走进公司
+                </div>
+                <p>福建省海峡信息技术有限公司是一家国有控股高新技术企业，专业从事网络安全技术领域的技术研究、产品销售、信息安全服务等业务，通过十多年的产品研发和发展，现已成为全国领先的网络安全整体解决方案提供商。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="introduction" class="introduction ">
+    <div class="title clearfix">
+        <img src="__PUBLIC__/img/introduce/icon_056.png" alt="" class="img-responsive " />
+        <yang:position />
+    </div>
+
+    <div class="honor">
+        <ul class="clearfix">
+            <li>
+                <div class="imgs">
+                    <img src="{{pic}}" alt="" class="img-responsive" />
+                </div>
+                <p>{{name}}</p>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+
+<include file="Public:footer"/>
+
+</body>
+</html>

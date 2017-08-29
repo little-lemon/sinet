@@ -1,0 +1,126 @@
+<!--友情链接-->
+<div class="fr_link" xmlns:yang="http://www.w3.org/1999/html">
+	<div class="sjBg">
+		<div class="max1200">
+			<section id="frilink">
+				<div class="container">
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 fried">
+						<h3>友情链接</h3>
+						<ul>
+							<yang:flink typeid='0'>
+								<li>
+									<a style="color: #b1c1d3" href="{$flink.url}" target="_blank">{$flink.name}</a>
+								</li>
+							</yang:flink>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 mecha">
+						<h3>安全产品</h3>
+						<ul>
+							<yang:catlist typeid='2' type='son' flag='1' limit='4'>
+								<li><a href="{$catlist.url}">{$catlist.name}</a></li>
+							</yang:catlist>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 mecha">
+						<h3>安全服务</h3>
+						<ul>
+							<yang:catlist typeid='5' type='son' flag='1' limit='4'>
+								<li><a href="{$catlist.url}">{$catlist.name}</a></li>
+							</yang:catlist>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+						<div class="call">
+							<span class="code"></span>
+							<span>微信公众号</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<!--友情链接-->
+
+<!--版权信息-->
+<div class="fotter">
+	<yang:sitename />&nbsp;版权所有
+	<span>&nbsp;联系:&nbsp;<yang:sitemail /> <yang:beian /> <yang:copyright /></span>
+</div>
+
+<!-- 返回顶部 -->
+<div id="goback">
+    <div class="jt">
+        <img src="__PUBLIC__/img/jt.png" alt="">
+    </div>
+    <p class="none">
+        返回顶部
+    </p>
+</div>
+<!-- 返回顶部 -->
+
+<div id="qqAdd" style="display: block; position: fixed; z-index: 2147483646 ! important; left: 8px; right: auto; margin-left: 0px; top: 50%; bottom: auto; margin-top: -138px;"></div>
+<!--在线客服-->
+<!-- WPA Button Begin -->
+<script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODAzOTEzNF8yMzI4MTFfNDAwNjM1MzUwMF8"></script>
+<!-- WPA Button END -->
+<script type="text/javascript">
+// 聊天窗口
+if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+	BizQQWPA.add({
+	 aty: '0', //接入到指定工号 0-自动分流，1-指定工号，2-指定分组
+	 //a: '1001', //指定工号1001接入
+	 type: '1', //使用按钮类型 WPA
+	 nameAccount: '4006353500', //营销 QQ 号码
+	 title: '欢迎咨询',
+	 wd: '黑盾产品在线支持',
+	 wd2: '0591-87303705',
+	 fsty: '1', // 浮动类型，1-固定型，2-滚动型，仅在 type=10,11,12时有效
+	 fposX: '0', // 浮动横向位置，0-左，1-中，2-右，仅在 type=10,11,12时有效
+	 fposY: '0', // 浮动纵向位置，0-上，1-中，2-下，仅在 type=10,11,12时有效
+	 parent: 'qqAdd' //将 WPA 放置在 ID 为 qqAdd 的元素里 type 为 1和2时有效
+	});
+}else{
+	BizQQWPA.add({
+	 aty: '0', //接入到指定工号 0-自动分流，1-指定工号，2-指定分组
+	 //a: '1001', //指定工号1001接入
+	 type: '12', //使用按钮类型 WPA
+	 nameAccount: '4006353500', //营销 QQ 号码
+	 title: '欢迎咨询',
+	 wd: '黑盾产品在线支持',
+	 wd2: '0591-87303705',
+	 fsty: 1, // 浮动类型，1-固定型，2-滚动型，仅在 type=10,11,12时有效
+	 fposX: '0', // 浮动横向位置，0-左，1-中，2-右，仅在 type=10,11,12时有效
+	 fposY: '1' // 浮动纵向位置，0-上，1-中，2-下，仅在 type=10,11,12时有效
+	 //parent: 'qqAdd' //将 WPA 放置在 ID 为 qqAdd 的元素里 type 为 1和2时有效
+	});
+	
+	var ii = 0;
+	var mqqTimer = setInterval(function(){
+		var oIframe = $('iframe:last');
+		if(oIframe.attr('src') == 'about:blank'){
+			var oIframeDoc = oIframe[0].contentDocument || oIframe[0].contentWindow.document;
+			if($.trim($('#launchBtn',oIframeDoc).text()) == 'QQ交谈'){
+				oIframe.css({position: 'fixed',top: '30%'});
+				if(ii++ > 10)clearInterval(mqqTimer);				
+				ii++;
+			}
+		}
+	},1000);
+	
+	/* BizQQWPA.addCustom({
+	 aty: '0', //接入到指定工号 0-自动分流，1-指定工号，2-指定分组
+	 //a: '1001', //指定工号1001接入
+	 nameAccount: '4006353500', //营销 QQ 号码
+	 //selector: 'qqAdd' //将 WPA 放置在 ID 为 qqAdd 的元素里
+	 node: document.body
+	});*/
+}
+
+// 添加访客功能
+BizQQWPA.visitor({
+ nameAccount: '4006353500' //营销 QQ 号码
+});
+</script>
+

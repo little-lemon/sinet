@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+
+    <title><yang:sitetitle/></title>
+    <meta name="keywords" content="<yang:sitekeywords />" />
+    <meta name="description" content="<yang:sitedescription />" />
+
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/style.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/header.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/banners.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/fotter.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/details.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/media.css"/>
+
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+	<!--[if lte IE 8]>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+	<![endif]-->
+
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/js/project/introduce.js"></script>
+
+</head>
+<body>
+<!--引入导航-->
+<include file="Public:header" cid="{$cate['id']}" />
+
+<!-- Banner判断 -->
+<switch name="cate['id']">
+    <case value="11">
+        <!--走进海峡02-->
+        <div id="banners" class="banners">
+            <!-- <img src="img/introduce/title_02.png" alt="" class="img-responsive" /> -->
+            <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_02.png);">
+                <div class="contain">
+                    <div class="xq">
+                        <div class="title">
+                            走进公司
+                        </div>
+                        <p>福建省海峡信息技术有限公司是一家国有控股高新技术企业，专业从事网络安全技术领域的技术研究、产品销售、信息安全服务等业务，通过十多年的产品研发和发展，现已成为全国领先的网络安全整体解决方案提供商。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </case>
+    <case value="2">
+        <!--安全产品03-->
+        <div id="banners" class="banners">
+            <!-- <img src="img/introduce/title_02.png" alt="" class="img-responsive" /> -->
+            <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_03.png);">
+                <div class="contain">
+                    <div class="xq">
+                        <div class="title">
+                            安全产品
+                        </div>
+                        <p>黑盾系列网络安全产品覆盖政府、医疗、教育、金融、能源、电力、交通等多个行业，现已为国内数千家政府和企事业单位提供信息安全保护。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </case>
+    <case value="5">
+        <!--安全服务04-->
+        <div id="banners" class="banners">
+            <!-- <img src="img/introduce/title_02.png" alt="" class="img-responsive" /> -->
+            <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_04.png);">
+                <div class="contain">
+                    <div class="xq">
+                        <div class="title">
+                            安全服务
+                        </div>
+                        <p>经过多年安全服务实践，海峡信息积累了大量安全工程实施经验，通过国家信息安全测评中心安全工程二级认证，是客户可信赖的信息安全专家顾问。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </case>
+    <case value="8">
+        <!--解决方案05-->
+        <div id="banners" class="banners">
+            <!-- <img src="img/introduce/title_02.png" alt="" class="img-responsive" /> -->
+            <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_05.png);">
+                <div class="contain">
+                    <div class="xq"> 
+                        <div class="title">
+                            行业应用解决方案
+                        </div>
+                        <p>海峡信息始终专注于中国的信息网络安全建设，结合最新的网络安全技术，为客户提供全面的网络安全整体解决方案和构建立体式安全防护体系。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </case>
+    <case value="9">
+        <!--渠道合作06-->
+        <div id="banners" class="banners">
+            <!-- <img src="img/introduce/title_02.png" alt="" class="img-responsive" /> -->
+            <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_06.png);">
+                <div class="contain">
+                    <div class="xq">
+                        <div class="title">
+                            渠道合作
+                        </div>
+                        <p>福建省海峡信息技术有限公司作为一家专业从事网络安全产品研发、销售和网络安全整体解决方案的一流供应商，我们的业务拓展方针是通过业内同行合作伙伴向最终用户提供服务和产品，本着“诚信 协作 共赢”的渠道合作原则</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </case>
+    <case value="10">
+        <!--人力资源07-->
+        <div id="banners" class="banners">
+            <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_06.png);">
+                <div class="contain">
+                    <div class="xq">
+                        <div class="title">
+                            诚聘英才
+                        </div>
+                        <p>秉承“人力资源是企业的第一资源”的人才经营理念，重视员工，激励员工，培养员工，让每个员工都能与公司共同进步和发展。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </case>
+    <case value="67">
+        <!--联系我们02-->
+        <div id="banners" class="banners">
+            <div class="bannerBG" style="background-image: url(__PUBLIC__/img/introduce/title_02.png);">
+                <div class="contain">
+                    <div class="xq">
+                        <div class="title">
+                            联系我们
+                        </div>
+                        <p>福建省海峡信息技术有限公司是福建省科技厅下属的省科技信息研究所控股、员工参股的国有企业</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </case>
+</switch>
+
+
+
+<!-- 公司介绍 -->
+<div id="introduction" class="introduction ">
+    <div class="title clearfix">
+        <img src="__PUBLIC__/img/introduce/icon_056.png" alt="" class="img-responsive"/>
+        <div>
+            <yang:position />
+        </div>
+    </div>
+
+    <div class="context">
+        <ul class="clearfix">
+            <yang:catlist flag='1' type='son' titlelen='10' limit='16'>
+                <!--<php>var_dump($catlist);</php>-->
+                <!--自定义页面模型-->
+                <!--<if condition=" ($catlist.template_list eq 'List_page.html') or ($catlist.template_list eq 'List_event.html') or ($catlist.template_list eq 'List_honor.html') or ($catlist.template_list eq 'List_culture.html') or ($catlist.template_list eq 'List_detail.html') or ($catlist.template_list eq 'List_download.html') ">-->
+                <php>
+                    $temp_list = array(
+                    'List_page.html',
+                    'List_event.html',
+                    'List_honor.html',
+                    'List_culture.html',
+                    'List_detail.html',
+                    'List_download.html',
+                    'List_service.html'
+                    );
+                </php>
+                <if condition="$catlist.template_list in $temp_list ">
+                    <!--判断产品模型中的2个-->
+                    <switch name="catlist['id']">
+                        <case value='34'>
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+                                <a href="{$catlist.url}" title="{$catlist.name}">
+                                    <div class="cell" style="height: 270px;">
+                                        <div class="ztImg">
+                                            <img src="{$catlist.catpic}" class="img-responsive"
+                                                 style="height: 200px;"/>
+                                            <h4 class="text-center" style="color: #2E85D8">{$catlist.name}</h4>
+                                        </div>
+                                        <dl class="clearfix"></dl>
+                                    </div>
+                                </a>
+                            </li>
+                        </case>
+                        <case value="35">
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+                                <a href="{$catlist.url}" title="{$catlist.name}">
+                                    <div class="cell">
+                                        <div class="title clearfix">
+                                            <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                            <!--<img src="__PUBLIC__/img/introduce/icon_3.png " class="img-responsive"/>-->
+                                            <div>
+                                                {$catlist.name}
+                                            </div>
+                                        </div>
+                                        <div class="englistTitle">
+                                            {$catlist.ename}
+                                        </div>
+                                        <div class="ztImg">
+                                            <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                        </div>
+                                        <p>{$catlist.description}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </case>
+                        <!--大事记-->
+                        <case value="16">
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+                                <a href="{$catlist.url}" title="{$catlist.name}">
+                                    <div class="cell">
+                                        <div class="title clearfix">
+                                            <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                            <div>{$catlist.name}</div>
+                                        </div>
+                                        <div class="englistTitle">{$catlist.ename}</div>
+                                        <div class="ztImg">
+                                            <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                        </div>
+                                        <dl class="clearfix">
+                                            <dt> <img src="__PUBLIC__/img/introduce/icon_96.png"  class="img-responsive"/></dt>
+                                            <dd>2017-06 海峡信息以“黑盾--安全缔造信息未来 ”为主题，</dd>
+                                            <dt> <img src="__PUBLIC__/img/introduce/icon_96.png"  class="img-responsive"/></dt>
+                                            <dd>2016-11 公司建设运营的“福建省海峡软件应用安全公共服务平台”成功入选福建省互联网经济重点公共服务平台</dd>
+                                            <dt> <img src="__PUBLIC__/img/introduce/icon_96.png"  class="img-responsive"/></dt>
+                                            <dd>2016-07 公司成功入选“福建省科技小巨人领军企业”</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+                            </li>
+                        </case>
+                        <!--资质荣誉-->
+                        <case value="19">
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+                                <a href="{$catlist.url}" title="{$catlist.name}">
+                                    <div class="cell">
+                                        <div class="title clearfix">
+                                            <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                            <div>{$catlist.name}</div>
+                                        </div>
+                                        <div class="englistTitle">{$catlist.ename}</div>
+                                        <div class="ztImg">
+                                            <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                        </div>
+                                        <dl class="clearfix">
+                                            <dt> <img src="__PUBLIC__/img/introduce/icon_96.png"  class="img-responsive"/></dt>
+                                            <dd>高新企业技术证书</dd>
+                                            <dt> <img src="__PUBLIC__/img/introduce/icon_96.png"  class="img-responsive"/></dt>
+                                            <dd>福建省信息网络安全工程技术研究中心</dd>
+                                            <dt> <img src="__PUBLIC__/img/introduce/icon_96.png"  class="img-responsive"/></dt>
+                                            <dd>福建省创新型企业认证证书</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+                            </li>
+                        </case>
+                        <default/>
+                        <!--自定义页面模型-->
+                        <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+                            <a href="{$catlist.url}" title="{$catlist.name}">
+                                <div class="cell">
+                                    <div class="title clearfix">
+                                        <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                        <!--<img src="__PUBLIC__/img/introduce/icon_3.png " class="img-responsive"/>-->
+                                        <div>
+                                            {$catlist.name}
+                                        </div>
+                                    </div>
+                                    <div class="englistTitle">
+                                        {$catlist.ename}
+                                    </div>
+                                    <div class="ztImg">
+                                        <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                    </div>
+                                    <p>{$catlist.description}</p>
+                                </div>
+                            </a>
+                        </li>
+                    </switch>
+                </if>
+
+                <!--文章模型显示-->
+                <if condition="$catlist.template_list eq 'List_article.html' ">
+                    <switch name="catlist['name']">
+                        <case value='社会招聘'>
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+
+                                <div class="cell">
+                                    <div class="title clearfix">
+                                        <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                        <div>
+                                            {$catlist.name}
+                                        </div>
+                                    </div>
+                                    <div class="englistTitle">
+                                        {$catlist.ename}
+                                    </div>
+                                    <div class="ztImg">
+                                        <!--<img src="__PUBLIC__/img/introduce/introduce05.png" alt="" class="img-responsive" />-->
+                                        <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                    </div>
+                                    <dl class="clearfix">
+
+
+                                        <dd style="max-height: 32px">
+                                            <img src="__PUBLIC__/img/job/zhilian.png" alt="智联招聘" width="20px" height="20px" style="display: inline-block" />
+                                            <a style="color: #8F8E8E" target="_blank" href="http://special.zhaopin.com/pagepublish/15671011/index.html">智联招聘</a>
+                                        </dd>
+
+
+                                        <dd style="max-height: 32px">
+                                            <img src="__PUBLIC__/img/job/51job.png" alt="前程无忧" width="20px" height="20px" style="display: inline-block" />
+                                            <a style="color: #8F8E8E" target="_blank" href="http://jobs.51job.com/all/co2997075.html">前程无忧</a>
+                                        </dd>
+
+
+                                        <dd style="max-height: 32px">
+                                            <img src="__PUBLIC__/img/job/haixia.png" alt="海峡人才" width="20px" height="20px" style="display: inline-block"/>
+                                            <a style="color: #8F8E8E" target="_blank" href="http://www.hxrc.com/JobDetail_5525e890-9a34-49f8-a368-0c6f6ca2145b.html">海峡人才网</a>
+                                        </dd>
+
+                                    </dl>
+                                </div>
+
+                            </li>
+                        </case>
+                        <case value='长期招聘'>
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+
+                                <a href="{:U('Show/job')}" title="{$catlist.name}">
+
+                                    <div class="cell">
+                                        <div class="title clearfix">
+                                            <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                            <div>
+                                                {$catlist.name}
+                                            </div>
+                                        </div>
+                                        <div class="englistTitle">
+                                            {$catlist.ename}
+                                        </div>
+                                        <div class="ztImg">
+                                            <!--<img src="__PUBLIC__/img/introduce/introduce05.png" alt="" class="img-responsive" />-->
+                                            <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                        </div>
+                                        <dl class="clearfix">
+                                            <yang:artlist limit='3' titlelen='20' typeid="58">
+                                                <dt>
+                                                    <img src="__PUBLIC__/img/introduce/icon_96.png" alt=""
+                                                         class="img-responsive"/>
+                                                </dt>
+                                                <dd>
+                                                    {$artlist.title}
+                                                </dd>
+                                            </yang:artlist>
+                                        </dl>
+                                    </div>
+                                </a>
+                            </li>
+                        </case>
+                        <case value='校园招聘'>
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+
+                                <a href="{:U('Show/schooljob')}" title="{$catlist.name}">
+
+                                    <div class="cell">
+                                        <div class="title clearfix">
+                                            <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                            <div>
+                                                {$catlist.name}
+                                            </div>
+                                        </div>
+                                        <div class="englistTitle">
+                                            {$catlist.ename}
+                                        </div>
+                                        <div class="ztImg">
+                                            <!--<img src="__PUBLIC__/img/introduce/introduce05.png" alt="" class="img-responsive" />-->
+                                            <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                        </div>
+                                        <dl class="clearfix">
+                                            <yang:artlist limit='3' titlelen='20' typeid="99">
+                                                <dt>
+                                                    <img src="__PUBLIC__/img/introduce/icon_96.png" alt=""
+                                                         class="img-responsive"/>
+                                                </dt>
+                                                <dd>
+                                                    {$artlist.title}
+                                                </dd>
+                                            </yang:artlist>
+                                        </dl>
+                                    </div>
+                                </a>
+                            </li>
+                        </case>
+                        <default />
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+
+                                <a href="{$catlist.url}" title="{$catlist.name}">
+
+                                    <div class="cell">
+                                        <div class="title clearfix">
+                                            <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                            <div>
+                                                {$catlist.name}
+                                            </div>
+                                        </div>
+                                        <div class="englistTitle">
+                                            {$catlist.ename}
+                                        </div>
+                                        <div class="ztImg">
+                                            <!--<img src="__PUBLIC__/img/introduce/introduce05.png" alt="" class="img-responsive" />-->
+                                            <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                        </div>
+                                        <dl class="clearfix">
+                                            <yang:artlist limit='3' titlelen='20'>
+                                                <dt>
+                                                    <img src="__PUBLIC__/img/introduce/icon_96.png" alt=""
+                                                         class="img-responsive"/>
+                                                </dt>
+                                                <dd>
+                                                    {$artlist.title}
+                                                </dd>
+                                            </yang:artlist>
+                                        </dl>
+                                    </div>
+                                </a>
+                            </li>
+                    </switch>
+
+                </if>
+
+                <!--判断产品模型-->
+                <if condition="$catlist.template_list eq 'List_product.html' ">
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+                        <a href="{$catlist.url}" title="{$catlist.name}">
+                            <div class="cell" style="height: 270px;">
+                                <div class="ztImg">
+                                    <img src="{$catlist.catpic}" alt="" class="img-responsive" style="height: 200px;"/>
+                                    <h4 class="text-center" style="color: #2E85D8">{$catlist.name}</h4>
+                                </div>
+                                <dl class="clearfix"></dl>
+                            </div>
+                        </a>
+                    </li>
+                </if>
+
+                <!--联系我们-->
+                <if condition="$catlist.template_list eq 'List_contact.html' ">
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+                        <a href="{$catlist.url}" title="{$catlist.name}">
+                            <div class="cell">
+                                <div class="title clearfix">
+                                    <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                    <!--<img src="__PUBLIC__/img/introduce/icon_3.png " class="img-responsive"/>-->
+                                    <div>
+                                        {$catlist.name}
+                                    </div>
+                                </div>
+                                <div class="englistTitle">
+                                    {$catlist.ename}
+                                </div>
+                                <div class="ztImg">
+                                    <img src="__PUBLIC__/img/introduce/Social.png" alt="" class="img-responsive"/>
+                                </div>
+                                <p>{$catlist.description}</p>
+                            </div>
+                        </a>
+                    </li>
+                </if>
+
+                <!--服务类-->
+                <if condition="$catlist.template_list eq 'List_service.html'">
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-zs-12">
+                        <a href="{$catlist.url}" title="{$catlist.name}">
+                            <div class="cell">
+                                <div class="title clearfix">
+                                    <div class="img" style="background-position: 0 {$catlist.seotitle}px;"></div>
+                                    <!--<img src="__PUBLIC__/img/introduce/icon_3.png " class="img-responsive"/>-->
+                                    <div>
+                                        {$catlist.name}
+                                    </div>
+                                </div>
+                                <div class="englistTitle">
+                                    {$catlist.ename}
+                                </div>
+                                <div class="ztImg">
+                                    <img src="{$catlist.catpic}" alt="" class="img-responsive"/>
+                                </div>
+                                <p>{$catlist.description}</p>
+                            </div>
+                        </a>
+                    </li>
+                </if>
+
+
+            </yang:catlist>
+        </ul>
+    </div>
+</div>
+
+<!--版权信息-->
+<include file="Public:footer"/>
+    
+</body>
+</html>

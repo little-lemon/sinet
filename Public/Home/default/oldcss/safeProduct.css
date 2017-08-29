@@ -1,0 +1,514 @@
+#safeProduct{
+	width: 100%;
+	margin:0 auto;
+	height: auto;
+	position: relative;
+	margin-top:20px;
+	/*margin-bottom: 2%;*/
+	/*font-family: '微软雅黑';*/
+}
+#safeProduct .title{
+	width: 100%;
+	height:auto;
+	color:#4C4C4C;
+	width: 80%;
+	margin:0 auto;
+	max-width: 1200px;
+}
+#safeProduct .title img{
+	float: left;
+}
+#safeProduct .title img.jt{
+    margin: 6px 0 0 0;
+}
+#safeProduct .title .js{
+	float: left;
+	margin: 4px 6px;
+	font-size: 1.1em;
+}
+
+
+
+#safeProduct .context{
+	width:80%;
+	height:auto;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+#safeProduct .context .begin{
+	width: 84%;
+	height: auto;
+	margin: 2% auto 0;
+}
+#safeProduct .context .begin .menu{
+	width: 100%;
+	height: auto;
+	margin: 4% 0;
+}
+#safeProduct .context .begin .menu ul{
+	margin:0;
+}
+#safeProduct .context .begin .menu ul li{
+    margin: 0 1%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #7F8690;
+    background-color: #E9E9E9;
+    letter-spacing: 1px;
+    padding: 6px;
+    font-weight: 600;
+}
+
+#safeProduct .context .begin .menu ul li.current{
+	color:#D8EAF4;
+	background-color: #0075B6;
+}
+
+#safeProduct .context .begin .content{
+	width: 100%;
+	margin-top: 1%;
+}
+#safeProduct .context .begin .content ul{
+	margin:0;
+}
+#safeProduct .context .begin .content ul li{
+	width:100%;
+}
+
+#safeProduct .context .begin .content ul li .pathone{
+	width: 100%;
+}
+#safeProduct .context .begin .content ul li .pathone .imgs{
+	width: 42%;
+	float: left;
+}
+#safeProduct .context .begin .content ul li .pathone .pathcontent{
+	width: 57%;
+	float: left;
+	padding: 1% 0;
+	margin-left: 1%;
+}
+#safeProduct .context .begin .content ul li .pathone .pathcontent .headline{
+	color:#999A9B;
+	border-bottom: 2px solid #999A9B;
+	width: 12%;
+    padding-left: .4%;
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+/*#safeProduct .context .begin .content ul li .pathone .pathcontent .productName{*/
+	/*color: #1D53B9;*/
+    /*font-size: 16px;*/
+    /*font-weight: 600;*/
+    /*margin: 1.5% 0;*/
+/*}*/
+#safeProduct .context .begin .content ul li .pathone .pathcontent p{
+    /*color: #8a8b8b;*/
+    /*line-height: 1.7;*/
+    // max-height: 160px;
+    overflow: hidden;
+	/*font-size: 14px;*/
+}
+
+#safeProduct .context .begin .content ul li .pathtwo{
+	width: 100%;
+    margin-top: 3%;
+    padding-top: 3%;
+    /*padding-bottom: 2%;*/
+} 
+#safeProduct .context .begin .content ul li .pathtwo .bg{
+	background: #F7F7F7;
+    width: 100%;
+    position: absolute;
+    height: 37%;
+    left: 0%;
+    top: 425px;
+}
+
+
+#safeProduct .context .begin .content ul li .pathtwo .pathTop{
+    color: #999A9B;
+    border-bottom: 2px solid #999A9B;
+    width: 9%;
+    padding-left: .4%;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2;
+    position: relative;
+}
+#safeProduct .context .begin .content ul li .pathtwo .pathBottom{
+    /*color: #1a51b8;*/
+    width: 100%;
+    padding-left: .4%;
+    /*font-size: 16px;*/
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    /*line-height: 3;	*/
+    /*font-weight: 600;*/
+}
+#safeProduct .context .begin .content ul li .pathtwo .advantage{
+	width: 100%;
+	margin-top: 5%;
+	text-align: center;
+}
+#safeProduct .context .begin .content ul li .pathtwo .advantage .fk{
+    width: 17.5%;
+    position: relative;
+    margin: 0 1% 2%;
+    display: inline-block;
+}
+#safeProduct .context .begin .content ul li .pathtwo .advantage .fk .bt{
+	position: absolute;
+    left: 38%;
+    top: 17%;
+    font-size: 2.7em;
+    color: #3ba568;
+}
+#safeProduct .context .begin .content ul li .pathtwo .advantage .fk p{
+	position: absolute;
+    left: 23%;
+    top: 51%;
+    /*font-size: 14px;*/
+    /*color: #777778;*/
+    width: 55%;
+    text-align: center;
+	text-indent: 0 !important;
+	letter-spacing: 0 !important;
+}
+
+#safeProduct .context .begin .content ul li .pathThree{
+	width: 100%;
+	margin-top: 5%
+} 
+
+#safeProduct .context .begin .content ul li .pathThree .pathTop{
+    color: #999A9B;
+    border-bottom: 2px solid #999A9B;
+    width: 9%;
+    padding-left: .4%;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2;
+}
+#safeProduct .context .begin .content ul li .pathThree .pathBottom{
+    /*color: #1a51b8;*/
+    width: 100%;
+    padding-left: .4%;
+    /*font-size: 16px;*/
+    text-align: center;
+    margin: 0 auto;
+    /*line-height: 3;	*/
+    /*font-weight: 600;*/
+}
+#safeProduct .context .begin .content ul li .pathThree .pathNrong{
+	width: 100%;
+	margin-top: 1%;
+}
+#safeProduct .context .begin .content ul li .pathThree .pathNrong dl{
+	width: 100%;
+}
+
+#safeProduct .context .begin .content ul li .pathThree .pathNrong dl dt span{
+    background-color: #3ba568;
+    padding: .5% 1%;
+    color: #fff;
+	font-size: 15px;
+}
+#safeProduct .context .begin .content ul li .pathThree .pathNrong dl dd{
+	width: 100%;
+}
+
+#safeProduct .context .begin .content ul li .pathThree .pathNrong dl dd p{
+    width: 100%;
+    color: #8a8b8b;
+    margin-top: 2%;
+    line-height: 1.8;
+    letter-spacing: .5px;
+	font-size: 14px;
+}
+
+#safeProduct .context .begin .content ul li .pathThree .pathNrong dl dd img{
+    margin: 3% auto;
+    width: 64%;
+}
+
+#safeProduct .context .begin .content ul li .pathThree .pathNrong dl dt span img{
+	display: inline-block;
+	margin-bottom: 4px;
+	/*margin-left: 1%;*/
+}
+
+.topbox{
+	position: absolute;
+	width:280px;
+	height:auto;
+	padding:1%;
+	background-color: #fff;
+	border: 1px solid #CECECE;
+	display:none;
+	z-index: 777;
+	letter-spacing: 1px;
+	color: #8a8a8b !important;
+	font-size: 13px;
+}
+
+.topbox .xsj{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	left:-6px;
+	top:30%;
+	transform: rotate(45deg);
+	border: 1px solid #CECECE;
+	border-right: 0;
+	border-top: 0;
+}
+
+.topbox .xsj.curs{
+	left: 98.5%;
+	border: 1px solid #CECECE;
+	border-left: 0px;
+	border-bottom: 0px;
+}
+
+#layerHB{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 1000;
+    top: 0;
+    display:none;
+}
+
+#layerHB .topbox{
+    left: 15%;
+    top: 37%;
+    display: block;
+    background: none;
+    color: #FFF !important;
+    font-size: 1.2em;
+    width: 72%;
+    box-sizing: border-box;
+    padding: 3%;
+    display:none;
+}
+#layerHB .topbox .xsj{
+	display:none;
+}
+
+
+
+
+@media (max-width: 1024px){
+	#safeProduct .context .begin{
+		width: 100%;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .advantage .fk p{
+		position: absolute;
+	    left: 16%;
+	    top: 51%;
+	    font-size: 1em;
+	    color: #777778;
+	    width: 69%;
+	    text-align: center;
+	}
+}
+
+@media (max-width: 773px){
+	#safeProduct {
+		width: 100%;
+	}
+	#safeProduct .title{
+		width: 92%;
+	}
+	#safeProduct .context{
+		width: 100%;
+	}
+	#safeProduct .context .begin{
+		width: 100%;
+	}
+	#safeProduct .context .begin .menu ul li{
+		margin-bottom: 3%;
+	}
+	#safeProduct .context .begin .content ul li .pathone .imgs{
+	    width: 46%;
+	    margin: 9% auto;
+	}
+	
+	#safeProduct .context .begin .content ul li .pathone .pathcontent{
+		width: 53%;
+		margin: 0 auto;
+	}
+	#safeProduct .context .begin .content ul li .pathone .pathcontent .headline{
+		width: 4.5em;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .pathTop,#safeProduct .context .begin .content ul li .pathThree .pathTop{
+		    width: 5em;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .pathBottom{
+		width: 10em;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .advantage .fk{
+		width: 28%;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .bg{
+		display:none;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo{
+		    background: #F7F7F7;
+		    margin-top: 0;
+	}
+	#safeProduct .context .begin .content ul li .pathThree .pathBottom{
+		width: 10em;
+	}
+	#safeProduct .context .begin .content ul li .pathThree .pathNrong{
+		width: 94%;
+		margin: 0 auto;
+	}
+	#safeProduct .context .begin .content ul li .pathThree .pathNrong dl{
+		margin-top: 1.8em;
+	}
+	#safeProduct .context .begin .menu{
+		width: 96%;
+	    height: auto;
+	    margin: 4% auto 0;
+	}
+	#safeProduct .context .begin .content ul li .pathone{
+		width: 96%;
+		margin: 0 auto;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .advantage{
+		width: 96%;
+		margin: 0 auto;
+	}
+	#safeProduct .context .begin .content ul li .pathThree{
+		width: 96%;
+		margin: 0 auto;
+		    margin-top: 5%;
+	}
+
+}
+
+@media (max-width: 414px){
+	#safeProduct {
+		width: 100%;
+	}
+	#safeProduct .title{
+		width: 92%;
+	}
+	#safeProduct .context{
+		width: 100%;
+	}
+	#safeProduct .context .begin{
+		width: 100%;
+	}
+	#safeProduct .context .begin .menu{
+		width: 96%;
+	    height: auto;
+	    margin: 4% auto;
+	}
+	#safeProduct .context .begin .menu ul li{
+		margin-bottom: 3%;
+	}
+	#safeProduct .context .begin .content ul li .pathone .imgs{
+		width: 94%;
+		margin: 0 auto;
+		margin-left: 3%;
+	}
+	
+	#safeProduct .context .begin .content ul li .pathone .pathcontent{
+		width: 94%;
+		margin: 0 auto;
+		margin-left: 3%;
+	}
+	#safeProduct .context .begin .content ul li .pathone .pathcontent .headline{
+		width: 4.5em;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .pathTop,#safeProduct .context .begin .content ul li .pathThree .pathTop{
+		    width: 5em;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .pathBottom{
+		width: 10em;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .advantage .fk{
+		width: 50%;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .advantage .fk .bt{
+		left:40%;
+		font-size: 3.2em;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .bg{
+		display:none;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo{
+		    background: #F7F7F7;
+	}
+	#safeProduct .context .begin .content ul li .pathThree .pathBottom{
+		width: 10em;
+	}
+	#safeProduct .context .begin .content ul li .pathThree .pathNrong{
+		width: 94%;
+		margin: 0 auto;
+	}
+	#safeProduct .context .begin .content ul li .pathThree .pathNrong dl{
+		margin-top: 1.8em;
+	}
+	#safeProduct .context .begin .content ul li .pathone{
+		width: 96%;
+		margin: 0 auto;
+	}
+	#safeProduct .context .begin .content ul li .pathtwo .advantage{
+		width: 96%;
+		margin: 0 auto;
+	}
+	#safeProduct .context .begin .content ul li .pathThree{
+		width: 96%;
+		margin: 0 auto;
+		    margin-top: 5%;
+	}
+}
+
+#safeProduct .context .begin .content ul li .pathThree .pathBottom img{
+	display: inline-block;
+	/* margin-bottom: 5px; */
+	margin: 3px 6px 5px 3px;
+}
+#safeProduct .context .begin .content ul li .pathone .pathcontent .productName img{
+	display: inline-block;
+	/* margin-bottom: 5px; */
+	margin: 0 6px 5px 3px;
+}
+#safeProduct .context .begin .content ul li .pathtwo .pathBottom img{
+	display: inline-block;
+	/* margin-bottom: 5px; */
+	margin: 0 6px 5px 3px;
+}
+@media (max-width: 320px){
+	#safeProduct .context .begin .content ul li .pathtwo .advantage .fk .bt{
+		left: 37%;
+		font-size: 3em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

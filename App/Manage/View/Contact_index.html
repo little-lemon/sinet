@@ -1,0 +1,245 @@
+<block name="header_css">
+    <link href="__PUBLIC__/css/product.css" rel="stylesheet" type="text/css" />
+</block>
+<extend name="Public:base"/>
+<block name="header_js">
+    <script type="text/javascript" src="__PUBLIC__/js/product.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/relation.js"></script>
+</block>
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em>
+                {$vo.name}
+                <span class="xyh-pos">
+                <i class="glyphicon glyphicon-log-out"></i>
+                <if condition='ACTION_NAME eq "index"'>
+                    <foreach name='poscate' item='v'>
+                    <a href="{:U('' . ucfirst($v['tablename']) .'/index', array('pid' => $v['id']))}">{$v.name} </a> <em
+                            class="glyphicon glyphicon-menu-right"></em>
+                    </foreach>
+                </if>
+            </span>
+            </h3>
+
+            <if condition="$subcate">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <span class="navbar-text">子栏目：</span>
+                            <foreach name='subcate' item='v'>
+                                <a href="{:U(''. ucfirst($v['tablename']) . '/index', array('pid' => $v['id']))}"
+                                   class="btn btn-sm btn-default navbar-btn">{$v.name}
+                                    <notempty name="v['child']">&there4;</notempty>
+                                </a>
+                            </foreach>
+                        </div>
+                    </div>
+                </nav>
+            </if>
+        </div>
+
+    </div>
+
+    <div id="tabbar-div">
+        <p>
+            <span class="tab-front">基本信息</span>
+            <span class="tab-back">办事处</span>
+        </p>
+    </div>
+
+    <form class="form-horizontal" id="formValidate" role="form" method="post" action="{:U('index')}">
+        <!--基本信息-->
+        <div class="row div_content">
+            <div class="col-lg-12">
+
+                <input type="hidden" name="hx_name" value="福建海峡信息技术有限公司" />
+                <foreach name="hxData['tel']" item="vo" key="k">
+                    <if condition="$k eq 0 ">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">电话</label>
+                            <div class="col-sm-5">
+                                <foreach name="hxData['tel']" item="vo">
+                                    <input type="text" class="form-control" name="hx_tel[]" value="{$vo}" placeholder="电话"/>
+                            </div>
+                            <button class="btn btn-success up-picture-btn btn-sm" id="add_tel">
+                                <span class="glyphicon glyphicon-plus-sign"></span>
+                            </button>
+                        </div>
+                        <else />
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"></label>
+                            <div class="col-sm-5">
+                                <foreach name="hxData['tel']" item="vo">
+                                    <input type="text" class="form-control" name="hx_tel[]" value="{$vo}" placeholder="电话"/>
+                            </div>
+                        </div>
+                    </if>
+                </foreach>
+
+                <div class="form-group" id="address">
+                    <label class="col-sm-2 control-label">地址</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="hx_addr" value="{$hxData.address}" placeholder="地址"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">邮编</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="hx_email" value="{$hxData.email}" placeholder="邮编"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">传真</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" name="hx_fax" value="{$hxData.fax}" placeholder="传真"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-9">
+                        <input type="hidden" name="id" value="{$pid}"/>
+                        <input type="hidden" name="pid" value="{$pid}"/>
+                        <button type="submit" class="btn btn-primary">
+                            <iclass="glyphicon glyphicon-saved"></i>
+                            保存
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--/基本信息-->
+
+        <!--办事处-->
+        <div class="raw div_content none">
+            <if condition="!empty($officeData)">
+                <foreach name="officeData" item="vo">
+                    <div class="panel panel-default office">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">办事处</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="name[]" value="{$vo.name}" placeholder="办事处"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">地址</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="addr[]" value="{$vo.address}" placeholder="地址"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">电话</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="tel[]" value="{$vo.tel}" placeholder="电话"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">联系人</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="contacts[]" value="{$vo.contacts}" placeholder="联系人"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">E-mail</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="email[]" value="{$vo.email}" placeholder="E-mail"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">传真</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="fax[]" value="{$vo.fax}" placeholder="传真"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreach>
+                <div id="position2"></div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-9">
+                        <input type="hidden" name="id" value="{$pid}"/>
+                        <input type="hidden" name="pid" value="{$pid}"/>
+                        <button class="btn btn-success up-picture-btn" id="add_office">
+                            <span class="glyphicon glyphicon-plus-sign">添加办事处</span>
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <iclass="glyphicon glyphicon-saved"></i>
+                            保存
+                        </button>
+                    </div>
+                </div>
+                <else/>
+                <div class="panel panel-default office">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">办事处</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="name[]" value="" placeholder="办事处"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">地址</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="addr[]" value="" placeholder="地址"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">电话</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="tel[]" value="" placeholder="电话"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">联系人</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="contacts[]" value="" placeholder="联系人"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">E-mail</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="email[]" value="" placeholder="E-mail"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">传真</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="fax[]" value="" placeholder="传真"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="position2"></div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-9">
+                        <input type="hidden" name="id" value="{$pid}"/>
+                        <input type="hidden" name="pid" value="{$pid}"/>
+                        <button class="btn btn-success up-picture-btn" id="add_office">
+                            <span class="glyphicon glyphicon-plus-sign">添加办事处</span>
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <iclass="glyphicon glyphicon-saved"></i>
+                            保存
+                        </button>
+                    </div>
+                </div>
+            </if>
+        </div>
+        <!--/办事处-->
+    </form>
+</block>

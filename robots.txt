@@ -1,0 +1,12 @@
+# robots.txt generated at http://tool.chinaz.com/robots/ 
+User-agent: *
+Disallow: 
+Disallow: /App/
+Disallow: /Include/
+Disallow: /Data/
+Disallow: /Public/
+Disallow: /Runtime/
+Disallow: /ueditor/
+Disallow: /uploads/
+Disallow: /sim.php
+

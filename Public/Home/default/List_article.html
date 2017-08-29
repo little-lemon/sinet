@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+
+	<title><yang:sitetitle/></title>
+	<meta name="keywords" content="<yang:sitekeywords />" />
+	<meta name="description" content="<yang:sitedescription />" />
+
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/style.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/header.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/newList.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/fotter.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/media.css"/>
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+	<![endif]-->
+    
+	<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+    </script>
+
+    <!-- <script type="text/javascript" src="__PUBLIC__/js/plugin/spin.min.js"></script> -->
+   <!-- <script type="text/javascript" src="__PUBLIC__/js/project/newList.js"></script>-->
+    <script type="text/javascript" src="__PUBLIC__/js/project/test-2.js"></script>
+</head>
+
+<body>
+<!--引入导航-->
+<include file="Public:header" cid="{$cate['pid']}"/>
+
+
+<!-- 新闻列表 -->
+<div id="newList" class="newList ">
+	<div class="title clearfix">
+		<img src="__PUBLIC__/img/introduce/icon_056.png" alt="" class="img-responsive " />
+		<yang:position />
+
+	</div>
+
+	<div class="news">
+
+		<div class="paging none">
+		 <div class="sy">
+                    首页
+                </div>
+			<div class="up">
+				上一页
+			</div>
+			<div class="down">
+				下一页
+			</div>
+			<div class="wy">
+                    尾页
+                </div>
+
+
+			共<span class="zys"></span>页
+			<p>
+
+				<input type="text" class="ys" />
+			</p>
+			<div class="five">
+				跳转
+			</div>
+		</div>
+
+
+
+	</div>
+
+     <div class="boxLayer"></div>
+</div>
+
+<!--动态加载部分-->
+<!--<div id="hsLayer">-->
+	<!--<img src="__PUBLIC__/img/timg.gif" alt=""  class="img-responsive none" />-->
+	<!--<p class="none">没有更多了</p>-->
+<!--</div>-->
+<!--<input type="hidden" name="" id="ychidden" value='18'>-->
+<input type="hidden" id="ychidden" value="{$cid}" />
+
+
+<div id="hsLayer">
+	<img src="__PUBLIC__/img/timg.gif" alt=""  class="img-responsive none" />
+	<p class="none">没有更多了</p>
+</div>
+
+<include file="Public:footer"/>
+
+</body>
+</html>

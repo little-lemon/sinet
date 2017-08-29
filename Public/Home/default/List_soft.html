@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+
+    <title><yang:sitetitle/></title>
+    <meta name="keywords" content="<yang:sitekeywords />" />
+    <meta name="description" content="<yang:sitedescription />" />
+
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/header.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/media.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/fotter.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/newDetails.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/details.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/banners.css"/>
+
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+	<!--[if lte IE 8]>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+	<![endif]-->
+
+
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/js/project/header.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/plugin/jquery.easing.js"></script>
+
+</head>
+
+<body>
+
+<include file="Public:header"/>
+
+<div id="banners" class="banners" style="background-image: url(__PUBLIC__/img/introduce/title_02.png);">
+    <!-- <img src="img/introduce/title_02.png" alt="" class="img-responsive" /> -->
+    <div class="contain">
+        <div class="xq">
+            <div class="title">
+                相关下载
+            </div>
+            <p>下载资源为移动线路，部分用户下载速度可能会稍慢，请耐心等待。</p>
+        </div>
+    </div>
+</div>
+
+<div id="introduction" class="introduction ">
+    <div class="title clearfix">
+        <img src="__PUBLIC__/img/introduce/icon_056.png" alt="" class="img-responsive " />
+        <yang:position />
+    </div>
+    <h3>相关下载</h3>
+
+    <ul>
+        <yang:soflist pagesize='5' pageroll='4'>
+
+            <li style="line-height: 30px; border-bottom: 1px dashed #1B6D85; padding-left: 14px; margin-top: 5px;">
+                <img src="{$soflist.litpic}" class="img-thumbnail"/>
+                <span>{$soflist.title}</span>
+                -----
+                <span>文件大小：{$soflist.filesize}</span>
+                -----
+                <span>发布时间：{$soflist.publishtime|date='Y-m-d',###}</span>
+                -----
+                <a href="{$soflist.url}">查看详细</a>
+            </li>
+        </yang:soflist>
+    </ul>
+    <!--分页-->
+    {$page}
+</div>
+
+
+
+<div class="fotter current">
+    福建省海峡信息技术有限公司版权所有
+    <span>联系:hxzhb@heidun.net 闽ICP备06011901号 © 1999-2017 Fujian Strait Information Corporation. All Rights Reserved.</span>
+</div>
+
+
+
+</body>
+</html>

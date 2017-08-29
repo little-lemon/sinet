@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+
+		<title><yang:sitetitle/></title>
+		<meta name="keywords" content="<yang:sitekeywords />" />
+		<meta name="description" content="<yang:sitedescription />" />
+
+	    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css"/>
+	    <link rel="stylesheet" href="__PUBLIC__/css/style.css"/>
+	    <link rel="stylesheet" href="__PUBLIC__/css/header.css"/>	 
+	    <link rel="stylesheet" href="__PUBLIC__/css/fotter.css"/>
+	    <link rel="stylesheet" href="__PUBLIC__/css/newDetails.css"/>
+	    
+	    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+		<!--[if lte IE 8]>
+		<script type="text/javascript" src="__PUBLIC__/js/plugin/html5shiv.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/plugin/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+	    <script type="text/javascript" src="http://lib.sinaapp.com/js/bootstrap/2.1.1/js/bootstrap.min.js"></script>
+	    <script type="text/javascript">
+	        !window.jQuery && document.write('<script src=__PUBLIC__/js/framework/jquery-1.9.1.min.js><\/script>');
+	    </script>
+	</head>
+
+	<body>
+
+		<include file="Public:header" />
+
+		<div class="container" style="margin-top: 120px;">
+			<!--$content是控制器传来的参数-->
+			<div align="center">标题：{$content.title}</div>
+			<div style="border:1px solid #FFE0B4; background:#ffeed5; text-align:center;">
+				发布时间:{$content.publishtime|date='Y-m-d',###} 丨 阅读次数:<yang:click /> 
+			</div>
+			<foreach name="content['pictureurls']" item="v">
+				<p class="text-center"><img src="{$v['url']|get_picture=600}" /></p>
+			</foreach>
+			<h3>相关介绍</h3>
+			<div>
+				<span class="text-muted">具体内容：{$content.content}</span>
+			</div>
+			<div>
+			 	<p class="text-success">↑上一篇：<yang:prev /></p>
+			 	<p class="text-success">↓下一篇：<yang:next /></p>
+		 	</div>
+		</div>
+
+	<div class="fotter current">福建省海峡信息技术有限公司版权所有 联系:hxzhb@heidun.net 闽ICP备06011901号 © 1999-2017 Fujian Strait Information Corporation. All Rights Reserved.</div>
+
+</body>
+</html>

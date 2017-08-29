@@ -1,0 +1,74 @@
+<script src="__PUBLIC__/js/project/header.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/project/goback.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/css/goback.css"/>
+<nav class="navbar navbar-default navbar-fixed-top" style="border-bottom: 1px solid #D8D8D8">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand"></a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+        	<!--显示导航-->
+            <ul class="nav navbar-nav navbar-right">
+            	<!--遍历显示一级目录-->
+				<li>
+					<a href="/" id="home" class="current">首页</a>
+				</li>
+				<yang:catlist typeid='0' flag='1'>
+					<li>
+						<a id="{$catlist.id}" href="{$catlist.url}">{$catlist.name}</a>
+						<if condition=" $catlist.name neq '安全产品' ">
+							<ul>
+								<!--二级菜单-->
+								<volist name='catlist["child"]' id='v' key="k">
+
+									<if condition="($v.name neq '相关下载') and ($v.name neq '社会招聘')  ">
+										<if condition="$v.name eq '长期招聘' "><li><a href="{:U('Show/job')}">{$v.name}</a></li>
+											<elseif condition="$v.name eq '校园招聘' "/><li><a href="{:U('Show/schooljob')}">{$v.name}</a></li>
+										<else /><li><a href="{$v|get_url}">{$v.name}</a></li>
+										</if>
+									</if>
+
+								</volist>
+							</ul>
+							<!--安全产品分两列-->
+						<else />
+							<ul class="safProduct actived">
+								<dl class="clearfix">
+									<dt>
+										<volist name='catlist["child"]' id='v' offset="0" length='8'>
+											<li><a href="{$v|get_url}">{$v.name}</a></li>
+										</volist>
+									</dt>
+									<div class="jbt">
+										<img src="__PUBLIC__/img/fgx.png" alt="" class="img-responsive" />
+									</div>
+									<dd>
+										<volist name='catlist["child"]' id='v' offset="8" length='20'>
+											<li><a href="{$v|get_url}">{$v.name}</a></li>
+										</volist>
+									</dd>
+								</dl>
+							</ul>
+						</if>
+
+					</li>
+				</yang:catlist>
+				
+            </ul>
+        </div>
+		<script>
+//			active状态的添加
+			$("#home").removeClass("current");
+			$("#[cid]").addClass("current");
+            $("#[cid]").parent('li').addClass("currs").siblings('li').removeClass("currs");
+		</script>
+    </div>
+</nav>

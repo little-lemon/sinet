@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+/* history */
+#history{width:100%;height:auto;position:relative;max-width: 1081px;margin: 0 auto;top: 2em;}
+#history .title{height:95px;line-height:95px;text-indent:280px;}
+#history .title h2{color:#7c7c7c;font-size:18px;font-weight:500;}
+#circle{
+	width:93px;height:93px;border:6px solid #02448F;border-radius:95px;text-indent:0;text-align:center;
+	behavior: url(css/ie-css3.htc); 
+	margin: 0 auto;
+	background:#fff\9;
+	border:6px solid #DDDDDD\9;
+	background-color: #02448F;
+}
+#circle .cmsk{height:83px;position:absolute;width:83px;top:0;left:0;}
+/*#circle:hover{
+	transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	border-color:rgba(0,0,0,0);
+}*/
+.clock{display:block;}
+/*#circle:hover {border-color:rgba(255,255,255,0.6);background-color:#6bc30d;}
+#circle:hover .clock{display:block;}
+#circle:hover .circlecontent{display:none;}*/
+#circle span{font-size:18px;color:#b0b0b0;}
+#circle .clock{
+	background:url(../img/clock.png) no-repeat 0 0;width:83px;height:83px;position:absolute;top:0;left:0;display:none;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+	border-radius:0;
+
+}
+#circle:hover .clock{border-radius:83px;}
+.timeyear{color:#ffffff;font-size:18px;line-height:20px;}
+.timeblock{height:28px;margin-top:22px;margin-left:5px;}
+.timeblock span{display:block;height:24px;width:18px;background:url(../img/date.png) no-repeat 0 0;float:left;}
+.timeblock .numf{background-position:0px -48px;}
+.timeblock .nums{background-position:0px 0px;}
+.timeblock .numt{background-position:0px -24px;}
+.timeblock .numfo{background-position:0px -168px;}
+#content{height:355px;width:100%;overflow:hidden;background:url(../img/vertical.png) no-repeat 36.3% 2px;padding-top:10px;}
+.list{overflow:hidden;position:relative;}
+.list li{height:110px;vertical-align:bottom;overflow:hidden;position:relative;}
+.liwrap{height:55px;margin-top:28px;}
+.lileft{position:absolute;top:0;height:55px;width:48%;line-height:55px;text-align:right;}
+.lileft.imp{right:0;text-align: left;}
+.liright{position:absolute;top:0;right:0px;height:55px;width:48%;}
+.liright.imp{left:0;text-align: right;}
+.histt{height:35px;line-height:35px;}
+.hisct{font-size:14px;color:#6e6e6e;}
+.md{font-size:18px;color:#B0AFB1;}
+.year{font-size:12px;color:#B0AFB1;margin-right:10px;letter-spacing: 1px;}
+.point{width:55px;height:55px;position:absolute;top:0;left:47.4%;background:url(../img/point.png) no-repeat 0px 18px;overflow:hidden;}
+.point.imp{
+	background-position: 19px 18px;
+}
+.point b{
+	height:16px;width:16px;background:#fff;display:block;margin:18px 0 0 37%;border-radius:18px;border:2px solid #02448F;
+	-webkit-transition:all 0.1s linear;
+	-moz-transition:all 0.1s linear;
+	-o-transition:all 0.1s linear;
+	transition:all 0.1s linear;
+	position:absolute;
+	top:0;left:0;
+}
+.thiscur .point b{border:7px solid #02448F;margin:18px 0px 0px 37%;border-radius:52px;}
+.thiscur .histt a{color:#02448F;}
+.histt a{
+	font-size:15px;color:#747474;
+	-webkit-transition:all 0.3s linear;
+	-moz-transition:all 0.3s linear;
+	-o-transition:all 0.3s linear;
+	transition:all 0.3s linear;
+}
+#arrow{position:fixed;top:50%;right:30px;max-width: 1081px;}
+*html #arrow{position:absolute;top:expression(eval(document.documentElement.scrollTop));margin-top:350px;}
+
+#arrow ul li{
+	display:block;height:20px;width:20px;background:url(../img/icons.png) no-repeat 0 0;cursor:pointer;
+	-webkit-transition:all 0.2s ease-out;
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;
+}
+#arrow ul li:active{background-color:#000;}
+#arrow ul .arrow_active{
+	background-color:#000;
+	-webkit-transition:all 0.1s ease-in;
+	-moz-transition:all 0.1s ease-in;
+	-o-transition:all 0.1s ease-in;
+	transition:all 0.1s ease-in;
+}
+#arrow ul .arrowup{background-position:0px -26px;margin-bottom:10px;}
+#arrow ul .arrowdown{background-position:0px 0px;}
+
+
+
+@media (min-width: 1200px){
+	#content{
+		background-position: 50% 2px !important;
+	}
+}
+@media (min-width: 992px) and (max-width:1200px){
+	#content{
+		background-position: 50% 2px !important;
+	}
+	.point b{
+		margin:18px 0 0 27%;
+	}
+	.thiscur .point b{
+		margin:18px 0 0 27%;
+	}
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px){
+	#content{
+		background-position: 50% 2px !important;
+	}
+	.point b{
+		margin:18px 0 0 19%;
+	}
+	.thiscur .point b{
+		margin:18px 0 0 19%;
+	}
+	.lileft,.liright{
+		width:45%;
+	}
+}
+
+@media (max-width: 768px){
+	#content{
+		background-position: 50.5% 2px !important;
+	}
+	.point {
+		left:45.4%;
+	}
+	.point b{
+		margin:18px 0 0 38%;
+	}
+	.thiscur .point b{
+		margin:18px 0 0 38%;
+	}
+	.point.imp {
+	    background-position: 35px 18px;
+	}
+	.lileft,.liright{
+		width:43%;
+	}
+	.lileft .md{
+		font-size: 1em;
+	}
+}
+
+
+@media (max-width: 605px){
+	#content{
+		background-position: 50.5% 2px !important;
+	}
+	.point{
+		left: 44% !important;
+	}
+	.lileft,.liright{
+		width:43%;
+	}
+	.lileft .md{
+		font-size: 1.2em;
+	}
+	.lileft .year{
+		margin-right: 0;
+	}
+	.point.imp {
+	    background-position: 15px 18px;
+	}
+	.point b{
+		margin:18px 0 0 46%;
+	}
+	.thiscur .point b{
+		margin:18px 0 0 46%;
+	}
+	.histt a {
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width: 414px){
+	.point b{
+		margin:18px 0 0 29%;
+	}
+	.thiscur .point b{
+		margin:18px 0 0 29%;
+	}
+}
+@media (max-width: 320px){
+	.point b{
+		margin:18px 0 0 19%;
+	}
+	.thiscur .point b{
+		margin:18px 0 0 19%;
+	}
+}
+
+
+
+
+
+
+
+
